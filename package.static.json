@@ -1,0 +1,13 @@
+{
+  "name": "unternehmerschein-coach-static",
+  "version": "1.0.0",
+  "scripts": {
+    "build:static": "cp next.config.static.js next.config.js && next build",
+    "export": "npm run build:static"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

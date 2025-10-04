@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle Background -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" stroke="#FFFFFF" stroke-width="4"/>
+  
+  <!-- Inner Shadow Effect -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- FP Text -->
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="65" font-weight="900" fill="url(#textGradient)">FP</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="rgba(255,255,255,0.8)">DRIVING</text>
+  
+  <!-- 3D Effect Highlight -->
+  <ellipse cx="100" cy="80" rx="30" ry="15" fill="rgba(255,255,255,0.2)"/>
+</svg>

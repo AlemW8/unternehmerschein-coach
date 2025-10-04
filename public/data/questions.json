@@ -1,0 +1,3590 @@
+{
+  "pbefg": [
+    {
+      "id": 1,
+      "question": "Welche Beförderungen von Personen unterliegen dem Personenbeförderungsgesetz (PBefG)?",
+      "answer": "Alle entgeltlichen oder geschäftsmäßigen Beförderungen von Personen mit Kraftfahrzeugen. Das heißt: Sobald eine Fahrt bezahlt wird oder regelmäßig mit Gewinnerzielungsabsicht durchgeführt wird, gilt das PBefG. Private Mitfahrten ohne Entgelt fallen nicht darunter.",
+      "options": [
+        "Nur entgeltliche Beförderungen",
+        "Alle entgeltlichen oder geschäftsmäßigen Beförderungen",
+        "Nur geschäftsmäßige Beförderungen",
+        "Alle Beförderungen ohne Ausnahme"
+      ],
+      "correct": 1,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Zählen Sie die Ihnen bekannten Verkehrsarten auf.",
+      "answer": "Nach PBefG: Linienverkehr, Gelegenheitsverkehr (Taxi, Mietwagen, Ausflugsfahrten, Ferienziel-Reisen), Sonderformen (z. B. Schülerverkehr, Werksverkehr)",
+      "options": [
+        "Nur Linienverkehr",
+        "Linienverkehr und Gelegenheitsverkehr",
+        "Nur Gelegenheitsverkehr",
+        "Linienverkehr, Gelegenheitsverkehr und Sonderformen"
+      ],
+      "correct": 3,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Was versteht man unter 'Gelegenheitsverkehr'?",
+      "answer": "Verkehr, der nicht nach einem festen Fahrplan oder Linienweg durchgeführt wird, sondern nach Bedarf.",
+      "options": [
+        "Fester Fahrplan",
+        "Feste Linienführung",
+        "Verkehr nach Bedarf ohne festen Fahrplan",
+        "Nur zu bestimmten Uhrzeiten"
+      ],
+      "correct": 2,
+      "category": "Gelegenheitsverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Welche Formen des Gelegenheitsverkehrs kennen Sie?",
+      "answer": "Taxiverkehr, Mietwagenverkehr, Ausflugsfahrten, Ferienziel-Reisen.",
+      "options": [
+        "Nur Taxiverkehr",
+        "Taxiverkehr, Mietwagenverkehr, Ausflugsfahrten, Ferienziel-Reisen",
+        "Nur Mietwagenverkehr",
+        "Linienverkehr und Taxiverkehr"
+      ],
+      "correct": 1,
+      "category": "Gelegenheitsverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was ist unter 'Taxiverkehr' zu verstehen?",
+      "answer": "Beförderung von Personen mit Pkw, die an behördlich zugelassenen Taxenständen bereitgehalten werden oder während der Fahrt bestellt/angehalten werden können.",
+      "options": [
+        "Reparaturwerkstätten für Taxen",
+        "Beförderung von Personen mit Pkw an Taxenständen oder auf Anruf",
+        "Tankstellen für Taxen",
+        "Verwaltungsgebäude"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Was ist unter 'Mietwagenverkehr' zu verstehen?",
+      "answer": "Beförderung von Personen mit Pkw, die nur auf Vorbestellung (Rückfahrt an den Betriebssitz) und ohne Beförderungspflicht durchgeführt wird.",
+      "options": [
+        "Spontan auf der Straße",
+        "Nur auf Vorbestellung",
+        "An Taxiständen",
+        "Nach festem Fahrplan"
+      ],
+      "correct": 1,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Welche Behörde ist für die Erteilung von Genehmigungen zuständig?",
+      "answer": "Die örtlich zuständige Genehmigungsbehörde (meist Landratsamt, kreisfreie Stadt oder Regierungspräsidium).",
+      "options": [
+        "Bundesverkehrsministerium",
+        "Die örtlich zuständige Genehmigungsbehörde",
+        "Polizeipräsidium",
+        "Finanzamt"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Welche Genehmigung benötigt ein Taxiunternehmer?",
+      "answer": "Eine Konzession nach § 13 PBefG für den Gelegenheitsverkehr mit Taxen.",
+      "options": [
+        "Lizenz nach § 49 PBefG",
+        "Konzession nach § 13 PBefG",
+        "Genehmigung nach § 21 PBefG",
+        "Keine Genehmigung erforderlich"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Welche Genehmigung benötigt ein Mietwagenunternehmer?",
+      "answer": "Eine Genehmigung nach § 49 PBefG für den Gelegenheitsverkehr mit Mietwagen.",
+      "options": [
+        "Konzession nach § 13 PBefG",
+        "Genehmigung nach § 49 PBefG",
+        "Lizenz nach § 21 PBefG",
+        "Keine Genehmigung erforderlich"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Welche Voraussetzungen muss ein Unternehmer für eine Konzession/Genehmigung erfüllen?",
+      "answer": "Fachliche Eignung (Fachkundeprüfung), finanzielle Leistungsfähigkeit, persönliche Zuverlässigkeit, Betriebssitz im Genehmigungsbezirk.",
+      "options": [
+        "Fachliche Eignung",
+        "Finanzielle Leistungsfähigkeit",
+        "Persönliche Zuverlässigkeit",
+        "Alle genannten Voraussetzungen"
+      ],
+      "correct": 3,
+      "category": "Voraussetzungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "PBefG Frage 21: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 21: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "PBefG Frage 22: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 22: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "PBefG Frage 23: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 23: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "PBefG Frage 24: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 24: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "PBefG Frage 25: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 25: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 26,
+      "question": "PBefG Frage 26: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 26: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 27,
+      "question": "PBefG Frage 27: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 27: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 28,
+      "question": "PBefG Frage 28: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 28: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 29,
+      "question": "PBefG Frage 29: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 29: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 30,
+      "question": "PBefG Frage 30: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 30: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 31,
+      "question": "PBefG Frage 31: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 31: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 32,
+      "question": "PBefG Frage 32: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 32: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 33,
+      "question": "PBefG Frage 33: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 33: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 34,
+      "question": "PBefG Frage 34: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 34: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 35,
+      "question": "PBefG Frage 35: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 35: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 36,
+      "question": "PBefG Frage 36: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 36: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 37,
+      "question": "PBefG Frage 37: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 37: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 38,
+      "question": "PBefG Frage 38: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 38: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 39,
+      "question": "PBefG Frage 39: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 39: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 40,
+      "question": "PBefG Frage 40: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 40: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 41,
+      "question": "PBefG Frage 41: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 41: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 42,
+      "question": "PBefG Frage 42: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 42: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 43,
+      "question": "PBefG Frage 43: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 43: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 44,
+      "question": "PBefG Frage 44: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 44: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 45,
+      "question": "PBefG Frage 45: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 45: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 46,
+      "question": "PBefG Frage 46: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 46: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 47,
+      "question": "PBefG Frage 47: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 47: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 48,
+      "question": "PBefG Frage 48: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 48: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 49,
+      "question": "PBefG Frage 49: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 49: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 50,
+      "question": "PBefG Frage 50: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 50: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 51,
+      "question": "PBefG Frage 51: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 51: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 52,
+      "question": "PBefG Frage 52: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 52: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 53,
+      "question": "PBefG Frage 53: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 53: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 54,
+      "question": "PBefG Frage 54: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 54: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 55,
+      "question": "PBefG Frage 55: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 55: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 56,
+      "question": "PBefG Frage 56: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 56: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 57,
+      "question": "PBefG Frage 57: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 57: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Genehmigungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 58,
+      "question": "PBefG Frage 58: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 58: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Verkehrsarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 59,
+      "question": "PBefG Frage 59: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 59: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Taxiverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 60,
+      "question": "PBefG Frage 60: Detailfrage zu Personenbeförderungsgesetz",
+      "answer": "Antwort 60: Spezifische Bestimmung des PBefG mit relevanten Paragrafen und praktischen Beispielen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Mietwagenverkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 51,
+      "question": "PBefG Zusatzfrage 51: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 51: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 1,
+      "category": "Erweiterte Grundlagen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 52,
+      "question": "PBefG Zusatzfrage 52: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 52: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Sonderbestimmungen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 53,
+      "question": "PBefG Zusatzfrage 53: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 53: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Rechtsprechung",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 54,
+      "question": "PBefG Zusatzfrage 54: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 54: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Praxis",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 55,
+      "question": "PBefG Zusatzfrage 55: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 55: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 3,
+      "category": "Erweiterte Grundlagen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 56,
+      "question": "PBefG Zusatzfrage 56: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 56: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 1,
+      "category": "Sonderbestimmungen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 57,
+      "question": "PBefG Zusatzfrage 57: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 57: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Rechtsprechung",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 58,
+      "question": "PBefG Zusatzfrage 58: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 58: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 3,
+      "category": "Praxis",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 59,
+      "question": "PBefG Zusatzfrage 59: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 59: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Erweiterte Grundlagen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 60,
+      "question": "PBefG Zusatzfrage 60: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 60: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Sonderbestimmungen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 61,
+      "question": "PBefG Zusatzfrage 61: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 61: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 3,
+      "category": "Rechtsprechung",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 62,
+      "question": "PBefG Zusatzfrage 62: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 62: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Praxis",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 63,
+      "question": "PBefG Zusatzfrage 63: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 63: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Erweiterte Grundlagen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 64,
+      "question": "PBefG Zusatzfrage 64: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 64: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Sonderbestimmungen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 65,
+      "question": "PBefG Zusatzfrage 65: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 65: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Rechtsprechung",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 66,
+      "question": "PBefG Zusatzfrage 66: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 66: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Praxis",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 67,
+      "question": "PBefG Zusatzfrage 67: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 67: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Erweiterte Grundlagen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 68,
+      "question": "PBefG Zusatzfrage 68: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 68: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 2,
+      "category": "Sonderbestimmungen",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 69,
+      "question": "PBefG Zusatzfrage 69: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 69: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 1,
+      "category": "Rechtsprechung",
+      "difficulty": "advanced"
+    },
+    {
+      "id": 70,
+      "question": "PBefG Zusatzfrage 70: Erweiterte Bestimmungen des Personenbeförderungsgesetzes",
+      "answer": "Detaillierte Antwort 70: Spezifische PBefG-Regelung mit praktischen Anwendungsbeispielen.",
+      "options": [
+        "Erste Option",
+        "Zweite Option",
+        "Dritte Option",
+        "Vierte Option"
+      ],
+      "correct": 0,
+      "category": "Praxis",
+      "difficulty": "advanced"
+    }
+  ],
+  "bokraft": [
+    {
+      "id": 1,
+      "question": "Was regelt die BOKraft (Betriebsordnung für den Kraftfahrzeugverkehr)?",
+      "answer": "Die BOKraft regelt die technischen und betrieblichen Anforderungen an Kraftfahrzeuge im gewerblichen Personenverkehr sowie die Pflichten der Unternehmer und Fahrer.",
+      "options": [
+        "Nur technische Fahrzeuganforderungen",
+        "Technische und betriebliche Anforderungen sowie Unternehmerpflichten",
+        "Nur Fahrerpflichten",
+        "Nur Versicherungsbestimmungen"
+      ],
+      "correct": 1,
+      "category": "Grundlagen BOKraft",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Welche Mindestanforderungen gelten für Taxifahrzeuge nach BOKraft?",
+      "answer": "Mindestens 4 Türen, ausreichend Platz für Fahrgäste und Gepäck, technisch einwandfreier Zustand, entsprechende Sicherheitsausstattung.",
+      "options": [
+        "Mindestens 2 Türen",
+        "Mindestens 4 Türen und entsprechende Ausstattung",
+        "Höchstens 3 Türen",
+        "Anzahl der Türen ist egal"
+      ],
+      "correct": 1,
+      "category": "Fahrzeuganforderungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Welche Sicherheitsausstattung ist für Taxen vorgeschrieben?",
+      "answer": "Erste-Hilfe-Kasten, Warndreieck, Feuerlöscher, Warnweste, bei Bedarf zusätzliche Sicherheitseinrichtungen.",
+      "options": [
+        "Nur Erste-Hilfe-Kasten",
+        "Erste-Hilfe-Kasten, Warndreieck, Feuerlöscher, Warnweste",
+        "Nur Warndreieck",
+        "Nur Feuerlöscher"
+      ],
+      "correct": 1,
+      "category": "Sicherheitsausstattung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Wie oft müssen gewerblich genutzte Fahrzeuge zur Hauptuntersuchung?",
+      "answer": "Alle 12 Monate (bei gewerblicher Personenbeförderung), im Gegensatz zu privaten Pkw alle 24 Monate.",
+      "options": [
+        "Alle 6 Monate",
+        "Alle 12 Monate",
+        "Alle 24 Monate",
+        "Alle 36 Monate"
+      ],
+      "correct": 1,
+      "category": "Fahrzeugprüfungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was ist bei der Fahrzeugkennzeichnung zu beachten?",
+      "answer": "Deutlich sichtbare und lesbare Kennzeichnung, bei Taxen gelbe Kennzeichnung, ordnungsgemäße Anbringung der Kennzeichen.",
+      "options": [
+        "Beliebige Farbe möglich",
+        "Bei Taxen gelbe Kennzeichnung erforderlich",
+        "Nur schwarze Kennzeichen",
+        "Kennzeichnung ist optional"
+      ],
+      "correct": 1,
+      "category": "Fahrzeugkennzeichnung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Welche Bestimmungen gelten für die Fahrzeugbeleuchtung?",
+      "answer": "Vollständige und funktionsfähige Beleuchtungseinrichtung nach StVZO, regelmäßige Kontrolle und Wartung erforderlich.",
+      "options": [
+        "Nur Scheinwerfer erforderlich",
+        "Vollständige Beleuchtung nach StVZO",
+        "Beleuchtung ist optional",
+        "Nur bei Nachtfahrten erforderlich"
+      ],
+      "correct": 1,
+      "category": "Fahrzeugbeleuchtung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Welche Fahrtenschreiber-Bestimmungen gelten für Taxen?",
+      "answer": "Bei Fahrzeugen über 3,5t zGG oder über 9 Sitzplätzen ist ein Fahrtenschreiber vorgeschrieben. Normale Taxen sind meist davon befreit.",
+      "options": [
+        "Immer Fahrtenschreiber erforderlich",
+        "Nur bei Fahrzeugen über 3,5t oder 9+ Sitzplätzen",
+        "Nie erforderlich",
+        "Nur bei Überlandfahrten"
+      ],
+      "correct": 1,
+      "category": "Fahrtenschreiber",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Was gilt für die Wartung und Instandhaltung von Taxifahrzeugen?",
+      "answer": "Regelmäßige Wartung nach Herstellervorgaben, dokumentierte Wartungsintervalle, sofortige Reparatur sicherheitsrelevanter Mängel.",
+      "options": [
+        "Wartung ist optional",
+        "Regelmäßige Wartung und Dokumentation erforderlich",
+        "Nur bei Mängeln",
+        "Nur vor HU"
+      ],
+      "correct": 1,
+      "category": "Wartung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Welche Bereifungsvorschriften gelten für gewerbliche Fahrzeuge?",
+      "answer": "Mindestprofiltiefe 1,6mm, bei gewerblicher Nutzung empfohlen 3mm, M+S-Kennzeichnung bei Winterreifen.",
+      "options": [
+        "Keine besonderen Vorschriften",
+        "Mindestprofiltiefe 1,6mm, empfohlen 3mm",
+        "Immer Winterreifen",
+        "Nur Sommerreifen"
+      ],
+      "correct": 1,
+      "category": "Bereifung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Was ist bei Fahrzeugänderungen zu beachten?",
+      "answer": "Alle Änderungen müssen genehmigt und eingetragen werden, ABE oder Einzelabnahme erforderlich, Eintragung in Fahrzeugpapiere.",
+      "options": [
+        "Änderungen sind frei möglich",
+        "Genehmigung und Eintragung erforderlich",
+        "Nur optische Änderungen erlaubt",
+        "Keine Änderungen möglich"
+      ],
+      "correct": 1,
+      "category": "Fahrzeugänderungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "BOKraft Frage 21: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 21: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Prüfungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "BOKraft Frage 22: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 22: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Wartung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "BOKraft Frage 23: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 23: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Fahrzeugtechnik",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "BOKraft Frage 24: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 24: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Sicherheit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "BOKraft Frage 25: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 25: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Prüfungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 26,
+      "question": "BOKraft Frage 26: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 26: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Wartung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 27,
+      "question": "BOKraft Frage 27: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 27: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Fahrzeugtechnik",
+      "difficulty": "basic"
+    },
+    {
+      "id": 28,
+      "question": "BOKraft Frage 28: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 28: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Sicherheit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 29,
+      "question": "BOKraft Frage 29: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 29: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Prüfungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 30,
+      "question": "BOKraft Frage 30: Technische Anforderungen und Betriebsbestimmungen",
+      "answer": "Antwort 30: Spezifische technische Vorschrift nach BOKraft für gewerbliche Fahrzeuge.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Wartung",
+      "difficulty": "basic"
+    }
+  ],
+  "strassenverkehrsrecht": [
+    {
+      "id": 1,
+      "question": "Was regelt die Straßenverkehrs-Ordnung (StVO)?",
+      "answer": "Die StVO regelt das Verhalten im Straßenverkehr, Verkehrszeichen, Verkehrseinrichtungen und die Teilnahme am Straßenverkehr.",
+      "options": [
+        "Nur Verkehrszeichen",
+        "Das Verhalten im Straßenverkehr und Verkehrsregeln",
+        "Nur Fahrzeugzulassung",
+        "Nur Bußgelder"
+      ],
+      "correct": 1,
+      "category": "StVO Grundlagen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Welche besonderen Pflichten haben gewerbliche Fahrer?",
+      "answer": "Erhöhte Sorgfaltspflicht, Vorbildfunktion, Einhaltung von Lenk- und Ruhezeiten, besondere Rücksichtnahme auf andere Verkehrsteilnehmer.",
+      "options": [
+        "Keine besonderen Pflichten",
+        "Erhöhte Sorgfaltspflicht und Vorbildfunktion",
+        "Nur normale Verkehrsregeln",
+        "Nur Geschwindigkeitsbegrenzungen"
+      ],
+      "correct": 1,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Was gilt für das Halten und Parken von Taxen?",
+      "answer": "Taxen dürfen an ausgewiesenen Taxiständen halten und warten. Parken ist nur an erlaubten Stellen gestattet, nicht auf Taxiständen anderer Gemeinden.",
+      "options": [
+        "Überall erlaubt",
+        "Nur an ausgewiesenen Taxiständen und erlaubten Parkplätzen",
+        "Nur in Parkhäusern",
+        "Nur vor Hotels"
+      ],
+      "correct": 1,
+      "category": "Halten und Parken",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Welche Geschwindigkeitsbegrenzungen gelten für gewerbliche Fahrzeuge?",
+      "answer": "Grundsätzlich die allgemeinen Geschwindigkeitsbegrenzungen, besondere Vorsicht bei Fahrgastbeförderung, angepasste Geschwindigkeit je nach Verkehrslage.",
+      "options": [
+        "Immer 30 km/h",
+        "Allgemeine Begrenzungen mit erhöhter Vorsicht",
+        "Keine Begrenzungen",
+        "Immer 50 km/h"
+      ],
+      "correct": 1,
+      "category": "Geschwindigkeitsregeln",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was ist bei Verkehrskontrollen zu beachten?",
+      "answer": "Kooperative Haltung, Vorlage aller erforderlichen Dokumente (Führerschein, Fahrzeugschein, Genehmigungen), höfliches Verhalten.",
+      "options": [
+        "Dokumente können verweigert werden",
+        "Kooperative Haltung und Vorlage aller Dokumente",
+        "Nur Führerschein erforderlich",
+        "Kontrollen können abgelehnt werden"
+      ],
+      "correct": 1,
+      "category": "Verkehrskontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Welche Bestimmungen gelten für die Beförderung von Kindern?",
+      "answer": "Entsprechende Kindersicherung nach StVO, bei Kindern unter 12 Jahren bzw. unter 150 cm Körpergröße sind Kindersitze erforderlich.",
+      "options": [
+        "Keine besonderen Bestimmungen",
+        "Kindersitze bei Kindern unter 12 Jahren/150 cm",
+        "Nur Gurt erforderlich",
+        "Kinder dürfen nicht befördert werden"
+      ],
+      "correct": 1,
+      "category": "Kinderbeförderung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "StVR Frage 7: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 7: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "StVR Frage 8: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 8: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "StVR Frage 9: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 9: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "StVR Frage 10: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 10: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "StVR Frage 11: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 11: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "StVR Frage 12: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 12: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "StVR Frage 13: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 13: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "StVR Frage 14: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 14: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "StVR Frage 15: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 15: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "StVR Frage 16: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 16: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "StVR Frage 17: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 17: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "StVR Frage 18: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 18: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "StVR Frage 19: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 19: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "StVR Frage 20: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 20: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "StVR Frage 21: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 21: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "StVR Frage 22: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 22: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "StVR Frage 23: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 23: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "StVR Frage 24: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 24: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "StVR Frage 25: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 25: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 26,
+      "question": "StVR Frage 26: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 26: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 27,
+      "question": "StVR Frage 27: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 27: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Fahrerpflichten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 28,
+      "question": "StVR Frage 28: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 28: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kontrollen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 29,
+      "question": "StVR Frage 29: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 29: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "StVO",
+      "difficulty": "basic"
+    },
+    {
+      "id": 30,
+      "question": "StVR Frage 30: Straßenverkehrsrechtliche Bestimmungen für gewerbliche Fahrer",
+      "answer": "Antwort 30: Spezifische Regelung der StVO/StVZO für Taxiunternehmer und gewerbliche Fahrer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Verkehrszeichen",
+      "difficulty": "basic"
+    }
+  ],
+  "umweltschutz": [
+    {
+      "id": 1,
+      "question": "Welche umweltfreundlichen Antriebsarten gibt es im Taxigewerbe?",
+      "answer": "Elektrofahrzeuge, Hybridfahrzeuge, Wasserstoffantrieb, Erdgas- und Biogasfahrzeuge, moderne Dieselfahrzeuge mit Abgasnorm Euro 6.",
+      "options": [
+        "Nur Dieselfahrzeuge",
+        "Elektro, Hybrid, Wasserstoff, Gas und moderne Diesel",
+        "Nur Benzinfahrzeuge",
+        "Nur Elektrofahrzeuge"
+      ],
+      "correct": 1,
+      "category": "Umweltfreundliche Antriebe",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Was sind die Vorteile von Elektrotaxen?",
+      "answer": "Lokal emissionsfrei, geringere Betriebskosten, leiserer Betrieb, staatliche Förderungen, positive Außenwirkung.",
+      "options": [
+        "Nur geringere Kosten",
+        "Emissionsfrei, geringere Kosten, leiser, Förderungen",
+        "Nur staatliche Förderung",
+        "Nur leiserer Betrieb"
+      ],
+      "correct": 1,
+      "category": "Elektromobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Welche Umweltzonen gibt es und was bedeuten sie?",
+      "answer": "Grüne Umweltzone (nur Fahrzeuge mit grüner Plakette), gelbe und rote Umweltzonen (verschiedene Schadstoffklassen), Blaue Umweltzone geplant.",
+      "options": [
+        "Nur grüne Umweltzone",
+        "Grüne, gelbe, rote Umweltzonen nach Schadstoffklassen",
+        "Nur blaue Umweltzone",
+        "Keine Umweltzonen"
+      ],
+      "correct": 1,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Was versteht man unter 'Kraftstoffeffizienz'?",
+      "answer": "Optimaler Verbrauch bei minimalen Emissionen durch spritsparende Fahrweise, Fahrzeugwartung und Routenoptimierung.",
+      "options": [
+        "Nur wenig tanken",
+        "Optimaler Verbrauch bei minimalen Emissionen",
+        "Nur schnell fahren",
+        "Nur teure Kraftstoffe"
+      ],
+      "correct": 1,
+      "category": "Kraftstoffeffizienz",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Welche Rolle spielt die Abgasnorm bei Fahrzeugen?",
+      "answer": "Bestimmt die zulässigen Schadstoffemissionen, Euro 6 ist aktueller Standard, entscheidet über Zufahrt zu Umweltzonen.",
+      "options": [
+        "Unwichtig für Taxen",
+        "Bestimmt Schadstoffemissionen und Umweltzonen-Zufahrt",
+        "Nur für neue Fahrzeuge",
+        "Nur für Dieselfahrzeuge"
+      ],
+      "correct": 1,
+      "category": "Abgasnormen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Was bedeutet 'nachhaltige Mobilität' im Taxigewerbe?",
+      "answer": "Umweltschonende Fahrzeuge, effiziente Routen, Sharing-Konzepte, Integration in ÖPNV, Reduzierung von Leerfahrten.",
+      "options": [
+        "Nur Elektrofahrzeuge",
+        "Umweltschonende Fahrzeuge und effiziente Konzepte",
+        "Nur teure Fahrzeuge",
+        "Nur neue Fahrzeuge"
+      ],
+      "correct": 1,
+      "category": "Nachhaltige Mobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Umwelt Frage 7: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 7: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Umwelt Frage 8: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 8: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Nachhaltigkeit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Umwelt Frage 9: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 9: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Emissionen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Umwelt Frage 10: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 10: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Elektromobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Umwelt Frage 11: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 11: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Umwelt Frage 12: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 12: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Nachhaltigkeit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Umwelt Frage 13: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 13: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Emissionen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Umwelt Frage 14: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 14: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Elektromobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Umwelt Frage 15: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 15: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "Umwelt Frage 16: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 16: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Nachhaltigkeit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "Umwelt Frage 17: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 17: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Emissionen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "Umwelt Frage 18: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 18: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Elektromobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "Umwelt Frage 19: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 19: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "Umwelt Frage 20: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 20: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Nachhaltigkeit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "Umwelt Frage 21: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 21: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Emissionen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "Umwelt Frage 22: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 22: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Elektromobilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "Umwelt Frage 23: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 23: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Umweltzonen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "Umwelt Frage 24: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 24: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Nachhaltigkeit",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "Umwelt Frage 25: Umweltschutz und nachhaltige Mobilität im Taxigewerbe",
+      "answer": "Antwort 25: Umweltrelevante Bestimmung für emissionsarmes und nachhaltiges Taxi- und Mietwagengewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Emissionen",
+      "difficulty": "basic"
+    }
+  ],
+  "versicherungen": [
+    {
+      "id": 1,
+      "question": "Welche Versicherungen sind für Taxiunternehmer gesetzlich vorgeschrieben?",
+      "answer": "Kraftfahrzeug-Haftpflichtversicherung ist gesetzlich vorgeschrieben. Zusätzlich empfehlenswert: Betriebshaftpflicht, Kasko, Insassenunfallversicherung.",
+      "options": [
+        "Nur Betriebshaftpflicht",
+        "Kraftfahrzeug-Haftpflichtversicherung (Pflicht) plus weitere empfohlene",
+        "Nur Kaskoversicherung",
+        "Keine Versicherung erforderlich"
+      ],
+      "correct": 1,
+      "category": "Pflichtversicherungen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Was leistet die Kraftfahrzeug-Haftpflichtversicherung?",
+      "answer": "Schäden an anderen Personen und deren Eigentum bei Unfällen, Personenschäden, Sachschäden, Vermögensschäden Dritter.",
+      "options": [
+        "Nur eigene Schäden",
+        "Schäden an Dritten (Personen, Sachen, Vermögen)",
+        "Nur Fahrzeugschäden",
+        "Nur Personenschäden"
+      ],
+      "correct": 1,
+      "category": "Haftpflichtversicherung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Wann ist eine Kaskoversicherung sinnvoll?",
+      "answer": "Bei wertvollen oder finanzierten Fahrzeugen, Teilkasko gegen Diebstahl/Elementarschäden, Vollkasko auch bei selbstverschuldeten Unfällen.",
+      "options": [
+        "Niemals sinnvoll",
+        "Bei wertvollen/finanzierten Fahrzeugen",
+        "Nur bei alten Fahrzeugen",
+        "Nur bei Elektrofahrzeugen"
+      ],
+      "correct": 1,
+      "category": "Kaskoversicherung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Was deckt die Betriebshaftpflichtversicherung ab?",
+      "answer": "Schäden aus der Betriebstätigkeit, die nicht von der Kfz-Haftpflicht erfasst sind, z.B. Gepäckschäden, Vermögensschäden.",
+      "options": [
+        "Nur Fahrzeugschäden",
+        "Betriebsbedingte Schäden außerhalb Kfz-Haftpflicht",
+        "Nur Gebäudeschäden",
+        "Nur Mitarbeiterschäden"
+      ],
+      "correct": 1,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Welche Besonderheiten gelten bei Personenschäden?",
+      "answer": "Höhere Deckungssummen erforderlich, schnelle Meldung wichtig, ärztliche Versorgung sicherstellen, Dokumentation des Unfalls.",
+      "options": [
+        "Keine Besonderheiten",
+        "Höhere Deckungssummen und schnelle Meldung erforderlich",
+        "Nur normale Behandlung",
+        "Versicherung zahlt nicht"
+      ],
+      "correct": 1,
+      "category": "Personenschäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Was ist bei der Schadensregulierung zu beachten?",
+      "answer": "Sofortige Meldung an Versicherung, Dokumentation mit Fotos, Polizei bei Personenschäden, keine Schuldanerkenntnis.",
+      "options": [
+        "Schäden nicht melden",
+        "Sofortige Meldung und Dokumentation ohne Schuldanerkenntnis",
+        "Nur bei großen Schäden melden",
+        "Selbst regulieren"
+      ],
+      "correct": 1,
+      "category": "Schadensregulierung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Versicherung Frage 7: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 7: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Versicherung Frage 8: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 8: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Schäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Versicherung Frage 9: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 9: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Haftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Versicherung Frage 10: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 10: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Kasko",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Versicherung Frage 11: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 11: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Versicherung Frage 12: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 12: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Schäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Versicherung Frage 13: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 13: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Haftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Versicherung Frage 14: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 14: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Kasko",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Versicherung Frage 15: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 15: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "Versicherung Frage 16: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 16: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Schäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "Versicherung Frage 17: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 17: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Haftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "Versicherung Frage 18: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 18: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Kasko",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "Versicherung Frage 19: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 19: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "Versicherung Frage 20: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 20: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Schäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "Versicherung Frage 21: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 21: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Haftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "Versicherung Frage 22: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 22: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kasko",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "Versicherung Frage 23: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 23: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Betriebshaftpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "Versicherung Frage 24: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 24: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Schäden",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "Versicherung Frage 25: Versicherungsschutz und Haftung im Personenbeförderungsgewerbe",
+      "answer": "Antwort 25: Spezifische Versicherungsbestimmung für Taxiunternehmer und Schadensfälle.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Haftpflicht",
+      "difficulty": "basic"
+    }
+  ],
+  "grenzverkehr": [
+    {
+      "id": 1,
+      "question": "Welche Bestimmungen gelten für grenzüberschreitende Fahrten?",
+      "answer": "Cabotage-Bestimmungen beachten, entsprechende Genehmigungen erforderlich, Versicherungsschutz im Ausland prüfen, Zollbestimmungen.",
+      "options": [
+        "Keine besonderen Bestimmungen",
+        "Cabotage-Regeln, Genehmigungen, Versicherung, Zoll",
+        "Nur Reisepass erforderlich",
+        "Grenzfahrten sind verboten"
+      ],
+      "correct": 1,
+      "category": "Grenzüberschreitender Verkehr",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Was versteht man unter 'Cabotage'?",
+      "answer": "Die Beförderung von Personen zwischen zwei Orten innerhalb eines fremden Landes durch einen ausländischen Unternehmer.",
+      "options": [
+        "Grenzüberschreitende Fahrten",
+        "Beförderung zwischen zwei Orten im fremden Land",
+        "Touristische Fahrten",
+        "Flughafentransfers"
+      ],
+      "correct": 1,
+      "category": "Cabotage",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Welche Dokumente sind bei Auslandsfahrten mitzuführen?",
+      "answer": "Reisepass/Personalausweis, Führerschein, Fahrzeugschein, Versicherungsnachweis, ggf. internationale Versicherungskarte.",
+      "options": [
+        "Nur Führerschein",
+        "Reisepass, Führerschein, Fahrzeugschein, Versicherungsnachweis",
+        "Nur Reisepass",
+        "Keine Dokumente erforderlich"
+      ],
+      "correct": 1,
+      "category": "Auslandsdokumente",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Gelten deutsche Taxitarife auch im Ausland?",
+      "answer": "Nein, im Ausland gelten die jeweiligen nationalen Bestimmungen und Tarife. Vorab Vereinbarungen mit Fahrgästen empfehlenswert.",
+      "options": [
+        "Ja, immer deutsche Tarife",
+        "Nein, nationale Bestimmungen des Ziellandes",
+        "Nur in EU-Ländern",
+        "Gar keine Tarife"
+      ],
+      "correct": 1,
+      "category": "Auslandstarife",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was ist bei der Währungsumrechnung zu beachten?",
+      "answer": "Aktuelle Wechselkurse verwenden, transparente Abrechnung gegenüber Fahrgästen, ggf. Kartenzahlung in Landeswährung.",
+      "options": [
+        "Immer Euro verwenden",
+        "Aktuelle Wechselkurse und transparente Abrechnung",
+        "Nur Barzahlung",
+        "Kostenlose Fahrten"
+      ],
+      "correct": 1,
+      "category": "Währungsumrechnung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Welche Sprachkenntnisse sind hilfreich?",
+      "answer": "Grundkenntnisse der Landessprache, wichtige Begriffe für Taxi-Betrieb, ggf. Übersetzungshilfen oder Apps nutzen.",
+      "options": [
+        "Nur Deutsch",
+        "Grundkenntnisse der Landessprache und wichtige Begriffe",
+        "Perfekte Sprachkenntnisse erforderlich",
+        "Sprache unwichtig"
+      ],
+      "correct": 1,
+      "category": "Sprachkenntnisse",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Grenzverkehr Frage 7: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 7: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Dokumente",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Grenzverkehr Frage 8: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 8: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Tarife",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Grenzverkehr Frage 9: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 9: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Cabotage",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Grenzverkehr Frage 10: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 10: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "EU-Recht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Grenzverkehr Frage 11: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 11: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Dokumente",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Grenzverkehr Frage 12: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 12: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Tarife",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Grenzverkehr Frage 13: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 13: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Cabotage",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Grenzverkehr Frage 14: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 14: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "EU-Recht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Grenzverkehr Frage 15: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 15: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Dokumente",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "Grenzverkehr Frage 16: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 16: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Tarife",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "Grenzverkehr Frage 17: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 17: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Cabotage",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "Grenzverkehr Frage 18: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 18: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "EU-Recht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "Grenzverkehr Frage 19: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 19: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Dokumente",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "Grenzverkehr Frage 20: Grenzüberschreitende Personenbeförderung und internationale Bestimmungen",
+      "answer": "Antwort 20: Regelung für grenzüberschreitende Fahrten, Cabotage und internationale Genehmigungen.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Tarife",
+      "difficulty": "basic"
+    }
+  ],
+  "kalkulation": [
+    {
+      "id": 1,
+      "question": "Welche Kostenfaktoren müssen bei der Tarifkalkulation berücksichtigt werden?",
+      "answer": "Fixkosten (Fahrzeug, Versicherung, Steuern), variable Kosten (Kraftstoff, Wartung), Personalkosten, Gemeinkosten, Gewinnaufschlag.",
+      "options": [
+        "Nur Kraftstoffkosten",
+        "Fix-, variable, Personal- und Gemeinkosten plus Gewinn",
+        "Nur Fahrzeugkosten",
+        "Nur Versicherungskosten"
+      ],
+      "correct": 1,
+      "category": "Kostenarten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Wie berechnet sich der Kilometerpreis?",
+      "answer": "Gesamtkosten pro Jahr geteilt durch gefahrene Kilometer pro Jahr, zuzüglich Gewinnaufschlag und Berücksichtigung von Leerfahrten.",
+      "options": [
+        "Nur Spritkosten pro km",
+        "Gesamtkosten/Jahr ÷ km/Jahr plus Gewinn",
+        "Willkürliche Festlegung",
+        "Nach Gefühl"
+      ],
+      "correct": 1,
+      "category": "Preisberechnung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Was sind Leerfahrten und wie wirken sie sich aus?",
+      "answer": "Fahrten ohne Fahrgast (z.B. Anfahrt zum Kunden), verursachen Kosten ohne Erlöse, müssen in Kalkulation einbezogen werden.",
+      "options": [
+        "Fahrten mit Fahrgästen",
+        "Fahrten ohne Fahrgast, verursachen Kosten ohne Erlöse",
+        "Kostenlose Fahrten",
+        "Fahrten zur Tankstelle"
+      ],
+      "correct": 1,
+      "category": "Leerfahrten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Welche Rolle spielt die Auslastung bei der Rentabilität?",
+      "answer": "Höhere Auslastung = bessere Kostenverteilung, weniger Leerfahrten, höhere Wirtschaftlichkeit, optimale Fahrzeugnutzung.",
+      "options": [
+        "Auslastung unwichtig",
+        "Höhere Auslastung = bessere Wirtschaftlichkeit",
+        "Niedrige Auslastung besser",
+        "Auslastung schadet"
+      ],
+      "correct": 1,
+      "category": "Auslastung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Wie wirken sich Kraftstoffpreisschwankungen aus?",
+      "answer": "Direkte Auswirkung auf variable Kosten, regelmäßige Kalkulations-Anpassung nötig, ggf. Kraftstoff-Zuschläge in Tarifen.",
+      "options": [
+        "Keine Auswirkung",
+        "Direkte Auswirkung auf Kosten, Anpassung nötig",
+        "Nur bei Diesel relevant",
+        "Nur bei langen Fahrten"
+      ],
+      "correct": 1,
+      "category": "Kraftstoffkosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Was versteht man unter 'Break-Even-Point'?",
+      "answer": "Der Punkt, an dem Erlöse die Kosten decken (Gewinnschwelle), wichtig für Mindest-Umsatzplanung und Rentabilitätsberechnung.",
+      "options": [
+        "Höchster Gewinn",
+        "Punkt wo Erlöse = Kosten (Gewinnschwelle)",
+        "Niedrigster Preis",
+        "Maximaler Verlust"
+      ],
+      "correct": 1,
+      "category": "Break-Even",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Kalkulation Frage 7: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 7: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Rentabilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Kalkulation Frage 8: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 8: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Controlling",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Kalkulation Frage 9: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 9: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Kalkulation Frage 10: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 10: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Preise",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Kalkulation Frage 11: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 11: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Rentabilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Kalkulation Frage 12: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 12: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Controlling",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Kalkulation Frage 13: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 13: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Kosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Kalkulation Frage 14: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 14: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Preise",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Kalkulation Frage 15: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 15: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Rentabilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "Kalkulation Frage 16: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 16: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Controlling",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "Kalkulation Frage 17: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 17: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Kosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "Kalkulation Frage 18: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 18: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Preise",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "Kalkulation Frage 19: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 19: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Rentabilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "Kalkulation Frage 20: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 20: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Controlling",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "Kalkulation Frage 21: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 21: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Kosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "Kalkulation Frage 22: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 22: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Preise",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "Kalkulation Frage 23: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 23: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Rentabilität",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "Kalkulation Frage 24: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 24: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Controlling",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "Kalkulation Frage 25: Kostenrechnung und Preisgestaltung im Taxigewerbe",
+      "answer": "Antwort 25: Betriebswirtschaftliche Grundlage für Tarifkalkulation und Kostenmanagement.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Kosten",
+      "difficulty": "basic"
+    }
+  ],
+  "kaufmaennische_verwaltung": [
+    {
+      "id": 1,
+      "question": "Welche Bücher muss ein Taxiunternehmer führen?",
+      "answer": "Fahrtenbuch, Kassenbuch, Schichtzettel, Personalunterlagen, Betriebsausgaben-Belege, Einnahmen-Überschuss-Rechnung oder Bilanz.",
+      "options": [
+        "Nur Kassenbuch",
+        "Fahrtenbuch, Kassenbuch, Schichtzettel und weitere Unterlagen",
+        "Nur Fahrtenbuch",
+        "Gar keine Bücher"
+      ],
+      "correct": 1,
+      "category": "Buchführungspflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Was gehört in ein ordnungsgemäßes Fahrtenbuch?",
+      "answer": "Datum, Uhrzeit, Fahrstrecken, Fahrtzweck, Kilometerstand bei Beginn und Ende, Fahrername, Fahrgastname bei gewerblichen Fahrten.",
+      "options": [
+        "Nur Kilometerstand",
+        "Datum, Uhrzeit, Strecken, Zweck, km-Stand, Fahrer",
+        "Nur Fahrstrecken",
+        "Nur Uhrzeit"
+      ],
+      "correct": 1,
+      "category": "Fahrtenbuch",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Wie lange müssen Geschäftsunterlagen aufbewahrt werden?",
+      "answer": "Steuerlich relevante Unterlagen 10 Jahre, andere Geschäftsunterlagen mindestens 6 Jahre, Fahrtenbücher mindestens 2 Jahre.",
+      "options": [
+        "1 Jahr",
+        "Steuerlich 10 Jahre, andere 6 Jahre, Fahrtenbuch 2 Jahre",
+        "5 Jahre",
+        "Unbegrenzt"
+      ],
+      "correct": 1,
+      "category": "Aufbewahrungsfristen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Welche Steuern fallen für Taxiunternehmer an?",
+      "answer": "Umsatzsteuer, Einkommensteuer/Körperschaftsteuer, Gewerbesteuer, Kraftfahrzeugsteuer, ggf. weitere branchenspezifische Abgaben.",
+      "options": [
+        "Nur Umsatzsteuer",
+        "Umsatz-, Einkommen-, Gewerbe-, Kfz-Steuer",
+        "Nur Einkommensteuer",
+        "Keine Steuern"
+      ],
+      "correct": 1,
+      "category": "Steuerpflicht",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was ist bei der Personalverwaltung zu beachten?",
+      "answer": "Arbeitsverträge, Lohnabrechnungen, Sozialversicherung, Arbeitsschutz, Arbeitszeiterfassung, Urlaubsplanung, Fortbildungen.",
+      "options": [
+        "Nur Arbeitsverträge",
+        "Verträge, Lohn, Sozialversicherung, Arbeitsschutz",
+        "Nur Lohnabrechnungen",
+        "Keine Verwaltung nötig"
+      ],
+      "correct": 1,
+      "category": "Personalverwaltung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Welche Rolle spielt die Kostenrechnung?",
+      "answer": "Kontrolle der Wirtschaftlichkeit, Preiskalkulation, Erfolgsermittlung, Basis für betriebliche Entscheidungen und Optimierungen.",
+      "options": [
+        "Unwichtig",
+        "Wirtschaftlichkeitskontrolle und Entscheidungsgrundlage",
+        "Nur für große Betriebe",
+        "Nur für Banken"
+      ],
+      "correct": 1,
+      "category": "Kostenrechnung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Verwaltung Frage 7: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 7: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Personal",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Verwaltung Frage 8: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 8: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Organisation",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Verwaltung Frage 9: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 9: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Buchführung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Verwaltung Frage 10: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 10: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Steuern",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Verwaltung Frage 11: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 11: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Personal",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Verwaltung Frage 12: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 12: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Organisation",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Verwaltung Frage 13: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 13: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Buchführung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Verwaltung Frage 14: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 14: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Steuern",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Verwaltung Frage 15: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 15: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Personal",
+      "difficulty": "basic"
+    },
+    {
+      "id": 16,
+      "question": "Verwaltung Frage 16: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 16: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Organisation",
+      "difficulty": "basic"
+    },
+    {
+      "id": 17,
+      "question": "Verwaltung Frage 17: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 17: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Buchführung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 18,
+      "question": "Verwaltung Frage 18: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 18: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Steuern",
+      "difficulty": "basic"
+    },
+    {
+      "id": 19,
+      "question": "Verwaltung Frage 19: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 19: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Personal",
+      "difficulty": "basic"
+    },
+    {
+      "id": 20,
+      "question": "Verwaltung Frage 20: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 20: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Organisation",
+      "difficulty": "basic"
+    },
+    {
+      "id": 21,
+      "question": "Verwaltung Frage 21: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 21: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Buchführung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 22,
+      "question": "Verwaltung Frage 22: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 22: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Steuern",
+      "difficulty": "basic"
+    },
+    {
+      "id": 23,
+      "question": "Verwaltung Frage 23: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 23: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Personal",
+      "difficulty": "basic"
+    },
+    {
+      "id": 24,
+      "question": "Verwaltung Frage 24: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 24: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Organisation",
+      "difficulty": "basic"
+    },
+    {
+      "id": 25,
+      "question": "Verwaltung Frage 25: Kaufmännische Verwaltung und Buchführung für Taxiunternehmer",
+      "answer": "Antwort 25: Administrativer und buchhalterischer Aspekt der Unternehmensführung im Taxigewerbe.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Buchführung",
+      "difficulty": "basic"
+    }
+  ],
+  "verbaende_und_zentralen": [
+    {
+      "id": 1,
+      "question": "Welche Rolle spielen Taxi- und Mietwagenverbände?",
+      "answer": "Interessenvertretung, Beratung der Mitglieder, Schulungen, Tarifverhandlungen, Lobbyarbeit, Erfahrungsaustausch zwischen Unternehmern.",
+      "options": [
+        "Nur Geselligkeit",
+        "Interessenvertretung, Beratung, Schulungen, Tarifverhandlungen",
+        "Nur Tarifverhandlungen",
+        "Nur Beratung"
+      ],
+      "correct": 1,
+      "category": "Verbandsaufgaben",
+      "difficulty": "basic"
+    },
+    {
+      "id": 2,
+      "question": "Was bieten Taxizentralen ihren Mitgliedern?",
+      "answer": "Fahrtenvermittlung, gemeinsame Werbung, Kostenverteilung, technische Infrastruktur, 24h-Service, Kartenzahlung, Apps.",
+      "options": [
+        "Nur Fahrtenvermittlung",
+        "Fahrtenvermittlung, Werbung, Infrastruktur, Service",
+        "Nur Werbung",
+        "Nur Kartenzahlung"
+      ],
+      "correct": 1,
+      "category": "Taxizentralen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 3,
+      "question": "Welche Vorteile hat die Mitgliedschaft in einem Verband?",
+      "answer": "Rechtsberatung, Fortbildungen, Interessenvertretung, Erfahrungsaustausch, bessere Konditionen bei Versicherungen und Leasingverträgen.",
+      "options": [
+        "Keine Vorteile",
+        "Beratung, Fortbildung, Vertretung, bessere Konditionen",
+        "Nur Rechtsberatung",
+        "Nur niedrigere Kosten"
+      ],
+      "correct": 1,
+      "category": "Mitgliedschaftsvorteile",
+      "difficulty": "basic"
+    },
+    {
+      "id": 4,
+      "question": "Wie funktioniert die Fahrtenvermittlung über Zentralen?",
+      "answer": "Telefonische oder App-basierte Bestellung, Weiterleitung an verfügbare Fahrzeuge, GPS-Ortung, automatische Disposition.",
+      "options": [
+        "Nur telefonisch",
+        "Telefon, App, GPS-Ortung, automatische Disposition",
+        "Nur über Apps",
+        "Gar nicht"
+      ],
+      "correct": 1,
+      "category": "Fahrtenvermittlung",
+      "difficulty": "basic"
+    },
+    {
+      "id": 5,
+      "question": "Was sind die Kosten einer Zentralenmitgliedschaft?",
+      "answer": "Aufnahmegebühr, monatliche Grundgebühr, Provision pro vermittelte Fahrt, ggf. Kosten für technische Ausstattung.",
+      "options": [
+        "Kostenlos",
+        "Aufnahme-, Grund-, Provisions- und Technikkosten",
+        "Nur Grundgebühr",
+        "Nur Provision"
+      ],
+      "correct": 1,
+      "category": "Zentralenkosten",
+      "difficulty": "basic"
+    },
+    {
+      "id": 6,
+      "question": "Welche technischen Standards werden von Zentralen angeboten?",
+      "answer": "Funk- und Telefonsysteme, GPS-Navigation, Taxi-Apps, Kartenzahlungsterminals, digitale Fahrtenvermittlung, Online-Buchung.",
+      "options": [
+        "Nur Funk",
+        "Funk, GPS, Apps, Kartenzahlung, Online-Buchung",
+        "Nur Telefon",
+        "Keine Technik"
+      ],
+      "correct": 1,
+      "category": "Technische Standards",
+      "difficulty": "basic"
+    },
+    {
+      "id": 7,
+      "question": "Verbände Frage 7: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 7: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Service",
+      "difficulty": "basic"
+    },
+    {
+      "id": 8,
+      "question": "Verbände Frage 8: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 8: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Technik",
+      "difficulty": "basic"
+    },
+    {
+      "id": 9,
+      "question": "Verbände Frage 9: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 9: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Verbände",
+      "difficulty": "basic"
+    },
+    {
+      "id": 10,
+      "question": "Verbände Frage 10: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 10: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Zentralen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 11,
+      "question": "Verbände Frage 11: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 11: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 0,
+      "category": "Service",
+      "difficulty": "basic"
+    },
+    {
+      "id": 12,
+      "question": "Verbände Frage 12: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 12: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 3,
+      "category": "Technik",
+      "difficulty": "basic"
+    },
+    {
+      "id": 13,
+      "question": "Verbände Frage 13: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 13: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Verbände",
+      "difficulty": "basic"
+    },
+    {
+      "id": 14,
+      "question": "Verbände Frage 14: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 14: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 1,
+      "category": "Zentralen",
+      "difficulty": "basic"
+    },
+    {
+      "id": 15,
+      "question": "Verbände Frage 15: Verbände, Zentralen und Interessenvertretung im Taxigewerbe",
+      "answer": "Antwort 15: Rolle und Funktion von Verbänden und Taxizentralen für Unternehmer.",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correct": 2,
+      "category": "Service",
+      "difficulty": "basic"
+    }
+  ]
+}

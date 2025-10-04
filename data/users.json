@@ -1,0 +1,24 @@
+[
+  {
+    "id": "user_1759412217715_svzti54v3",
+    "email": "aleemwaqar@outlook.com",
+    "name": "Admin",
+    "password": "$2a$12$VGaXtNtltTDojGs6kpNU2uoT2X.FKSX/pqoA0yCNyCuA0l9LjKlDu",
+    "role": "ADMIN",
+    "plan": "TEAM",
+    "isActive": true,
+    "createdAt": "2025-10-02T13:36:57.715Z",
+    "updatedAt": "2025-10-02T13:36:57.715Z"
+  },
+  {
+    "id": "user_1759413033651_jbo3t8qk0",
+    "email": "waqaraleem1234@outlook.com",
+    "name": "test3",
+    "password": "$2a$12$5OBrJyOOBcuIi6SCdt5NJuizBKyKN.0IKsjxuGgm9qxRUsVjWq4Uq",
+    "role": "USER",
+    "plan": "PRO",
+    "isActive": true,
+    "createdAt": "2025-10-02T13:50:33.651Z",
+    "updatedAt": "2025-10-02T13:50:33.651Z"
+  }
+]

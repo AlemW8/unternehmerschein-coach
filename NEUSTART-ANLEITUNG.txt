@@ -1,0 +1,30 @@
+﻿Write-Host '
+
+          SERVER MUSS NEU GESTARTET WERDEN!          
+
+' -ForegroundColor Cyan
+
+Write-Host 'WICHTIG: Die Änderungen sind nur nach Neustart sichtbar!' -ForegroundColor Yellow
+Write-Host ''
+Write-Host ' WAS WURDE GEÄNDERT:' -ForegroundColor Green
+Write-Host '   Alte /pricing Seite gelöscht' -ForegroundColor White
+Write-Host '   pricing-new  pricing umbenannt' -ForegroundColor White  
+Write-Host '   Alle Links aktualisiert' -ForegroundColor White
+Write-Host '   Login-Sperre für Fragen aktiviert' -ForegroundColor White
+Write-Host ''
+Write-Host ' NEUSTART-ANLEITUNG:' -ForegroundColor Cyan
+Write-Host ''
+Write-Host '  Option 1 (Manuell):' -ForegroundColor Yellow
+Write-Host '  1. Gehe zum Terminal mit dem laufenden Server' -ForegroundColor White
+Write-Host '  2. Drücke STRG + C um den Server zu stoppen' -ForegroundColor White
+Write-Host '  3. Führe aus: npm run dev' -ForegroundColor White
+Write-Host ''
+Write-Host '  Option 2 (Automatisch):' -ForegroundColor Yellow
+Write-Host '  Öffne ein NEUES PowerShell Terminal und führe aus:' -ForegroundColor White
+Write-Host '  taskkill /F /IM node.exe; npm run dev' -ForegroundColor Cyan
+Write-Host ''
+Write-Host ' NACH DEM NEUSTART:' -ForegroundColor Green
+Write-Host '   http://localhost:3000  Neue Pricing-Seite' -ForegroundColor White
+Write-Host '   /learn  Login-Sperre aktiv' -ForegroundColor White
+Write-Host '   Fragen nur mit Login beantwortbar' -ForegroundColor White
+Write-Host ''

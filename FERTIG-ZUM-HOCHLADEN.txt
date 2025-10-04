@@ -1,0 +1,42 @@
+﻿#  UPLOAD-ANLEITUNG FÜR ALL-INKL - FERTIG!
+
+##  BUILD ERFOLGREICH - BEREIT ZUM HOCHLADEN
+
+###  Build-Statistik
+- Gesamtanzahl Dateien: 136
+- HTML-Seiten: 35 (alle Kategorien!)
+- JavaScript-Dateien: 54
+- Gesamtgröße: 2,35 MB
+- Fragen-Datenbank: questions.json mit 255 FRAGEN 
+
+###  Alle 9 Kategorien sind drin:
+1.  PBefG (70 Fragen)
+2.  Berufskraftfahrer (20 Fragen)
+3.  Straßenverkehrsrecht (30 Fragen)
+4.  Umweltschutz (25 Fragen)
+5.  Versicherungen (25 Fragen)
+6.  Grenzverkehr (20 Fragen)
+7.  Kalkulation (25 Fragen)
+8.  Kaufmännische Verwaltung (25 Fragen)
+9.  Verbände & Zentralen (15 Fragen)
+
+##  SO LÄDST DU HOCH:
+
+1. Öffne dein FTP-Programm (FileZilla, WinSCP, etc.)
+2. Verbinde mit All-inkl FTP
+3. Gehe zu /public_html/ (oder dein Webroot)
+4. Lade den KOMPLETTEN INHALT von 'out' Ordner hoch
+5. Fertig!
+
+### Wichtig:
+- Lade ALLE Dateien und Unterordner hoch
+- Besonders wichtig: _next/ und data/ Ordner
+- questions.json muss in data/ Ordner sein
+
+##  Nach dem Upload testen:
+- Startseite: https://deinedomain.de
+- Lern-Seite: https://deinedomain.de/learn
+- PBefG Quiz: https://deinedomain.de/learn/pbefg/multiple-choice
+
+---
+BEREIT ZUM HOCHLADEN! 

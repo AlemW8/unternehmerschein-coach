@@ -1,0 +1,36 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fahrpro-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#fahrpro-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Letter F -->
+  <path d="M30 25 L30 95 L35 95 L35 62 L70 62 L70 57 L35 57 L35 30 L75 30 L75 25 Z" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="0.5"/>
+  
+  <!-- Letter P -->
+  <path d="M50 40 L50 95 L55 95 L55 67.5 L70 67.5 
+           C 77 67.5 82 62.5 82 55.5 
+           C 82 48.5 77 43.5 70 43.5 
+           L55 43.5 L55 40 Z
+           M55 45 L70 45 
+           C 75 45 78 48 78 52.5 
+           C 78 57 75 62.5 70 62.5 
+           L55 62.5 Z" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="0.5"/>
+  
+  <!-- 3D Effect Highlight -->
+  <ellipse cx="45" cy="35" rx="15" ry="8" fill="rgba(255,255,255,0.3)" transform="rotate(-20 45 35)"/>
+</svg>

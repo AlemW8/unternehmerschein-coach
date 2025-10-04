@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab&Car - Dein Weg zur Fahrerlizenz</title>
+    <meta name="description" content="Die ultimative Lern-App für Taxi, Uber & Mietwagen. Moderne Lernmethoden, 3D-Animationen und adaptive Wiederholung für optimalen Lernerfolg.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Cab&Car - Dein Weg zur Fahrerlizenz">
+    <meta property="og:description" content="Die ultimative Lern-App für Taxi, Uber & Mietwagen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://waqaraleem.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .taxi-3d {
+            transform: perspective(1000px) rotateX(15deg) rotateY(-15deg);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: perspective(1000px) rotateX(15deg) rotateY(-15deg) translateY(0px); }
+            50% { transform: perspective(1000px) rotateX(15deg) rotateY(-15deg) translateY(-20px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-green-600 rounded-lg flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">C&C</span>
+                        </div>
+                        <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                            Cab&Car
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#lernen" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Lernen</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Features</a>
+                    <a href="#preise" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Preise</a>
+                    <a href="#kontakt" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Kontakt</a>
+                    <a href="#anmelden" class="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all">
+                        Jetzt starten
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Text -->
+                <div class="fade-in">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm mb-6">
+                        <span class="text-sm font-semibold">⚡ Modernste Lerntechnologie</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Dein Weg zur
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300">
+                            Fahrerlizenz
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl text-blue-100 mb-8 max-w-2xl">
+                        Für Taxi, Uber & Mietwagen. Meistere PBefG, BOKraft und alle Prüfungsinhalte mit unserer 
+                        KI-gestützten Lern-App. 3D-Animationen, adaptive Wiederholung und Prüfungssimulation für maximalen Erfolg.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#anmelden" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold bg-white text-blue-600 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all">
+                            Kostenlos starten
+                            <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#demo" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 transition-all">
+                            Demo ansehen
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="flex flex-wrap gap-8 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-yellow-300">255+</div>
+                            <div class="text-blue-200">Prüfungsfragen</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-yellow-300">98%</div>
+                            <div class="text-blue-200">Erfolgsquote</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-yellow-300">4.9</div>
+                            <div class="text-blue-200">⭐ Bewertung</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Animation -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="taxi-3d">
+                        <div class="relative w-64 h-32 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg shadow-2xl">
+                            <!-- Taxi Body -->
+                            <div class="absolute -top-6 left-6 right-6 h-12 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-t-lg shadow-lg"></div>
+                            <!-- Windows -->
+                            <div class="absolute -top-5 left-8 right-8 h-10 bg-gradient-to-b from-blue-200 to-blue-300 rounded-t-lg opacity-80"></div>
+                            <!-- Taxi Sign -->
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 w-20 h-8 bg-red-500 rounded-sm shadow-lg flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">TAXI</span>
+                            </div>
+                            <!-- Wheels -->
+                            <div class="absolute -bottom-4 left-4 w-10 h-10 bg-gray-800 rounded-full shadow-lg"></div>
+                            <div class="absolute -bottom-4 right-4 w-10 h-10 bg-gray-800 rounded-full shadow-lg"></div>
+                            <!-- Doors -->
+                            <div class="absolute top-1/2 -left-1 w-4 h-8 bg-gray-200 rounded-full shadow-inner transform -translate-y-1/2"></div>
+                            <div class="absolute top-1/2 -right-1 w-4 h-8 bg-gray-200 rounded-full shadow-inner transform -translate-y-1/2"></div>
+                            <!-- Shadow -->
+                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-48 h-6 bg-black/20 rounded-full blur-sm"></div>
+                        </div>
+                        
+                        <!-- Floating Icons -->
+                        <div class="absolute inset-0 pointer-events-none">
+                            <div class="absolute top-1/4 left-1/4 text-4xl animate-bounce" style="animation-delay: 0s;">📚</div>
+                            <div class="absolute top-1/3 right-1/4 text-3xl animate-bounce" style="animation-delay: 0.5s;">🎯</div>
+                            <div class="absolute bottom-1/3 left-1/6 text-3xl animate-bounce" style="animation-delay: 1s;">⚡</div>
+                            <div class="absolute bottom-1/4 right-1/6 text-4xl animate-bounce" style="animation-delay: 1.5s;">🏆</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Modernste Lernmethoden für maximalen Erfolg
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Unsere App kombiniert bewährte Pädagogik mit modernster Technologie für ein unvergleichliches Lernerlebnis.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Adaptive Wiederholung</h3>
+                    <p class="text-gray-600 mb-4">
+                        KI-gestützter Spaced-Repetition-Algorithmus passt sich deinem Lernfortschritt an.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ SM-2 Algorithmus</li>
+                        <li>✓ Personalisierte Intervalle</li>
+                        <li>✓ Optimale Retention</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Interaktive Lernmodi</h3>
+                    <p class="text-gray-600 mb-4">
+                        3D-Flashcards, Multiple Choice und Prüfungssimulation in einer App.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ 3D-Animationen</li>
+                        <li>✓ 4 Lernmodi</li>
+                        <li>✓ Gamification</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Prüfungssimulation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Realistische Prüfungsbedingungen mit Timer und detaillierter Auswertung.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✓ Original-ähnliche Fragen</li>
+                        <li>✓ Zeitmanagement</li>
+                        <li>✓ Schwächen-Analyse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="hero-bg text-white py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                Starte noch heute deinen Weg zum Erfolg
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Werde Teil von über 10.000 erfolgreichen Unternehmern, die mit unserer App 
+                ihren Unternehmerschein gemeistert haben.
+            </p>
+            <a href="#anmelden" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all shadow-lg">
+                Kostenlos starten
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-green-600 rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">C&C</span>
+                    </div>
+                    <span class="text-xl font-bold">Cab&Car</span>
+                </div>
+                <p class="text-gray-400">© 2024 Cab&Car. Made with ❤️ für Fahrer.</p>
+                <p class="text-gray-500 mt-2">waqaraleem.com - Dein Weg zur Fahrerlizenz</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            // Mobile menu functionality
+            console.log('Mobile menu toggled');
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all feature cards
+        document.querySelectorAll('.bg-gray-50').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+    <!-- PWA Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
