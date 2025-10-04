@@ -1,7 +1,12 @@
 import { NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import bcrypt from 'bcryptjs'
-import { prisma } from '@/lib/prisma'
+
+// In-Memory User Storage (for demo purposes)
+const users = new Map()
+
+// Export users map for other modules
+export { users }
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -16,14 +21,7 @@ export const authOptions: NextAuthOptions = {
           throw new Error('Email und Passwort sind erforderlich')
         }
 
-        const user = await prisma.user.findUnique({
-          where: {
-            email: credentials.email
-          },
-          include: {
-            subscription: true
-          }
-        })
+        const user = users.get(credentials.email)
 
         if (!user || !user.password) {
           throw new Error('Ungültige Anmeldedaten')
@@ -39,11 +37,11 @@ export const authOptions: NextAuthOptions = {
         }
 
         return {
-          id: user.id,
+          id: user.id || user.email,
           email: user.email,
           name: user.name,
-          role: user.role,
-          plan: user.plan,
+          role: user.role || 'user',
+          plan: user.plan || 'free',
           image: user.image,
         }
       }
@@ -71,7 +69,6 @@ export const authOptions: NextAuthOptions = {
   },
   pages: {
     signIn: '/auth/signin',
-    signUp: '/auth/signup',
   },
   secret: process.env.NEXTAUTH_SECRET || 'fallback-secret-for-development-only-please-change-in-production',
 }
