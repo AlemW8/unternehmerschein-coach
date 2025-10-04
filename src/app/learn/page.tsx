@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/components/providers/auth-provider'
+import { useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { 
@@ -19,7 +20,8 @@ import {
   Circle,
   TrendingUp,
   Crown,
-  Lock
+  Lock,
+  PartyPopper
 } from 'lucide-react'
 import { db } from '@/lib/db'
 import { ProgressDashboard } from '@/components/ui/progress-dashboard'
@@ -155,11 +157,16 @@ const LERNMODI = [
 
 export default function LearnPage() {
   const { user, isAuthenticated } = useAuth()
+  const searchParams = useSearchParams()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'started' | 'completed'>('all')
   const [selectedKapitel, setSelectedKapitel] = useState<string | null>(null)
   const [currentUser, setCurrentUser] = useState<any>(null)
   const [chaptersWithProgress, setChaptersWithProgress] = useState(KAPITEL)
+  const [showWelcome, setShowWelcome] = useState(false)
+
+  // Check for welcome parameter
+  const isWelcome = searchParams.get('welcome') === 'true'
 
   // Prüfe ob User eingeloggt ist
   const currentLoggedUser = user
@@ -167,6 +174,17 @@ export default function LearnPage() {
   const isAdmin = currentLoggedUser?.role === 'ADMIN'
   const isPremium = ['premium', 'pro', 'admin'].includes(userPlan.toLowerCase())
   const hasAccess = isPremium || isAdmin  // NUR PREMIUM, NICHT alle eingeloggten User!
+
+  useEffect(() => {
+    if (isWelcome && isPremium) {
+      setShowWelcome(true)
+      // Auto-hide welcome message after 10 seconds
+      const timer = setTimeout(() => {
+        setShowWelcome(false)
+      }, 10000)
+      return () => clearTimeout(timer)
+    }
+  }, [isWelcome, isPremium])
 
   useEffect(() => {
     setCurrentUser(currentLoggedUser)
@@ -216,6 +234,38 @@ export default function LearnPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-slate-900 dark:to-indigo-950">
       <div className="container mx-auto px-4 py-8">
+        {/* Welcome Message for New Premium Users */}
+        {showWelcome && (
+          <motion.div
+            initial={{ opacity: 0, y: -20, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -20, scale: 0.9 }}
+            className="mb-8 bg-gradient-to-r from-green-500 to-blue-600 text-white rounded-2xl p-6 shadow-2xl"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <PartyPopper className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">
+                    Willkommen bei Premium! 🎉
+                  </h3>
+                  <p className="text-green-100">
+                    Ihre Zahlung war erfolgreich - alle Inhalte sind jetzt freigeschaltet!
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowWelcome(false)}
+                className="text-white/80 hover:text-white text-2xl font-bold"
+              >
+                ×
+              </button>
+            </div>
+          </motion.div>
+        )}
+
         {/* Header */}
         <motion.div 
           className="text-center mb-12"

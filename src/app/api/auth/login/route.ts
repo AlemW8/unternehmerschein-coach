@@ -2,44 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
 import { sign } from 'jsonwebtoken'
 
-// PRODUCTION LOGIN - KEINE DEMO ACCOUNTS!
-// Echte User werden in Database gespeichert (nach Stripe Payment)
+// Import shared user storage from register route
+import { users } from '../register/route'
 
 const JWT_SECRET = process.env.JWT_SECRET || 'change-this-in-production-to-random-secret'
-
-// In-Memory User Store (später Prisma/Supabase)
-// NUR DEIN ADMIN ACCOUNT - ALLE ANDEREN MÜSSEN ZAHLEN!
-const users = new Map<string, {
-  id: string
-  email: string
-  name: string
-  password: string // bcrypt hash
-  role: 'ADMIN' | 'USER'
-  plan: 'free' | 'premium'
-  isActive: boolean
-  subscriptionId?: string
-  subscriptionEndDate?: string
-}>()
-
-// Initialisiere DEINEN Admin Account
-// Password wird gehashed gespeichert
-async function initializeAdminAccount() {
-  if (!users.has('aleemwaqar@outlook.com')) {
-    const hashedPassword = await bcrypt.hash('mera4711', 10)
-    users.set('aleemwaqar@outlook.com', {
-      id: 'admin-master',
-      email: 'aleemwaqar@outlook.com',
-      name: 'Admin',
-      password: hashedPassword,
-      role: 'ADMIN',
-      plan: 'premium',
-      isActive: true
-    })
-  }
-}
-
-// Admin beim Start initialisieren
-initializeAdminAccount()
 
 export async function POST(request: NextRequest) {
   try {
@@ -87,8 +53,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Check Subscription End Date
-    if (user.subscriptionEndDate && new Date(user.subscriptionEndDate) < new Date()) {
+    // Check Subscription End Date (only for non-premium users)
+    if (user.subscriptionEndDate && !user.isPremium && new Date(user.subscriptionEndDate) < new Date()) {
       return NextResponse.json(
         { 
           success: false, 
@@ -115,8 +81,9 @@ export async function POST(request: NextRequest) {
       email: user.email,
       name: user.name,
       role: user.role,
-      plan: user.plan,
+      plan: user.isPremium ? 'premium' : 'free',
       isActive: user.isActive,
+      isPremium: user.isPremium,
       subscriptionEndDate: user.subscriptionEndDate
     }
 

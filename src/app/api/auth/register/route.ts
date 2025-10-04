@@ -26,7 +26,7 @@ users.set(adminEmail, {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
-    const { email, password, name } = body
+    const { email, password, name, isPremium, sessionId } = body
 
     // Validierung
     if (!email || !password || !name) {
@@ -45,10 +45,11 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    // Passwort Stärke prüfen
-    if (password.length < 8) {
+    // Passwort Stärke prüfen (weniger streng für Post-Payment-Registrierung)
+    const minPasswordLength = isPremium ? 6 : 8
+    if (password.length < minPasswordLength) {
       return NextResponse.json(
-        { error: 'Passwort muss mindestens 8 Zeichen lang sein' },
+        { error: `Passwort muss mindestens ${minPasswordLength} Zeichen lang sein` },
         { status: 400 }
       )
     }
@@ -73,10 +74,12 @@ export async function POST(req: NextRequest) {
       name,
       role: 'USER',
       isActive: true,
-      subscriptionStatus: 'pending', // Wird nach Zahlung auf 'active' gesetzt
-      subscriptionEndDate: null,
+      subscriptionStatus: isPremium ? 'active' : 'pending', // Premium-Nutzer sofort aktiv
+      subscriptionEndDate: isPremium ? new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString() : null, // 1 Jahr Premium
       stripeCustomerId: null,
       stripeSubscriptionId: null,
+      stripeSessionId: sessionId || null, // Stripe Session ID für Referenz
+      isPremium: isPremium || false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     }
@@ -98,12 +101,16 @@ export async function POST(req: NextRequest) {
     // Passwort aus Response entfernen
     const { password: _, ...userWithoutPassword } = newUser
 
-    console.log('✅ Neuer User registriert:', email)
+    const successMessage = isPremium 
+      ? 'Premium-Registrierung erfolgreich! Sie werden automatisch angemeldet.'
+      : 'Registrierung erfolgreich! Du kannst dich jetzt einloggen.'
+
+    console.log(`✅ ${isPremium ? 'Premium-' : ''}User registriert:`, email)
 
     return NextResponse.json(
       {
         success: true,
-        message: 'Registrierung erfolgreich! Du kannst dich jetzt einloggen.',
+        message: successMessage,
         user: userWithoutPassword,
         token,
       },
