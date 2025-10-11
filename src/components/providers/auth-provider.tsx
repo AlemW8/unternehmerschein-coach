@@ -1,22 +1,26 @@
 'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import AuthService from '@/lib/auth-service'
 
 interface User {
   id: string
   email: string
   name: string
-  plan: string
+  role: string
+  plan: 'free' | 'premium'
+  isPremium: boolean
   isActive: boolean
-  role?: string
 }
 
 interface AuthContextType {
   user: User | null
-  isLoading: boolean
+  token: string | null
   isAuthenticated: boolean
-  login: (user: User) => void
-  signOut: () => void
+  isLoading: boolean
+  login: (email: string, password: string) => Promise<{ success: boolean; error?: string }>
+  logout: () => Promise<void>
+  refreshUser: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -29,67 +33,162 @@ export function useAuth() {
   return context
 }
 
-interface AuthProviderProps {
-  children: ReactNode
-}
-
-export function AuthProvider({ children }: AuthProviderProps) {
+export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
+  const [token, setToken] = useState<string | null>(null)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
+  // Initial load
   useEffect(() => {
-    // Check for stored user mit allen möglichen Speicher-Keys
-    const storedUser = localStorage.getItem('user') || localStorage.getItem('auth_user')
-    const isAuth = localStorage.getItem('isAuthenticated') === 'true'
+    checkAuthStatus()
     
-    if (storedUser && isAuth) {
-      try {
-        const userData = JSON.parse(storedUser)
-        setUser(userData)
-        console.log('✅ User loaded from localStorage:', userData)
-      } catch (error) {
-        console.error('Error parsing stored user:', error)
-        localStorage.removeItem('auth_user')
-        localStorage.removeItem('user')
-        localStorage.removeItem('isAuthenticated')
-      }
+    // Listen for auth events
+    const handleUserLogin = (event: CustomEvent) => {
+      console.log('🔑 Auth event received:', event.detail)
+      const { user: newUser, token: newToken } = event.detail
+      setUser(newUser)
+      setToken(newToken)
+      setIsAuthenticated(true)
     }
-    
-    // Listen for direct login events from registration
-    const handleUserLogin = (event: any) => {
-      const { user: loginUser } = event.detail
-      console.log('✅ Direct login event received:', loginUser)
-      setUser(loginUser)
-      localStorage.setItem('user', JSON.stringify(loginUser))
-      localStorage.setItem('isAuthenticated', 'true')
+
+    const handleUserLogout = () => {
+      console.log('🚪 Logout event received')
+      setUser(null)
+      setToken(null)
+      setIsAuthenticated(false)
     }
-    
-    window.addEventListener('userLogin', handleUserLogin)
-    setIsLoading(false)
-    
+
+    window.addEventListener('userLogin', handleUserLogin as EventListener)
+    window.addEventListener('userLogout', handleUserLogout as EventListener)
+
     return () => {
-      window.removeEventListener('userLogin', handleUserLogin)
+      window.removeEventListener('userLogin', handleUserLogin as EventListener)
+      window.removeEventListener('userLogout', handleUserLogout as EventListener)
     }
   }, [])
 
-  const signOut = () => {
-    setUser(null)
-    localStorage.removeItem('auth_user')
-    localStorage.removeItem('auth_token')
-    localStorage.removeItem('user')
+  const checkAuthStatus = async () => {
+    try {
+      console.log('🔍 Checking auth status...')
+      
+      // Check localStorage
+      const storedUser = localStorage.getItem('user')
+      const storedToken = localStorage.getItem('authToken')
+      const storedAuth = localStorage.getItem('isAuthenticated')
+      
+      if (storedUser && storedToken && storedAuth === 'true') {
+        console.log('✅ Found stored auth data')
+        
+        // Validate token with new AuthService
+        const validation = await AuthService.validateToken(storedToken)
+        
+        if (validation.success && validation.user) {
+          console.log('✅ Token validation successful')
+          setUser(validation.user)
+          setToken(storedToken)
+          setIsAuthenticated(true)
+        } else {
+          console.warn('⚠️ Token validation failed:', validation.error)
+          // Clear invalid auth data
+          localStorage.removeItem('user')
+          localStorage.removeItem('authToken')
+          localStorage.removeItem('isAuthenticated')
+          setUser(null)
+          setToken(null)
+          setIsAuthenticated(false)
+        }
+      } else {
+        console.log('ℹ️ No stored auth data found')
+        setUser(null)
+        setToken(null)
+        setIsAuthenticated(false)
+      }
+    } catch (error) {
+      console.error('❌ Error checking auth status:', error)
+      setUser(null)
+      setToken(null)
+      setIsAuthenticated(false)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
-  const login = (userData: User) => {
-    setUser(userData)
-    localStorage.setItem('auth_user', JSON.stringify(userData))
+  const login = async (email: string, password: string) => {
+    try {
+      console.log('🔑 Attempting login for:', email)
+      
+      const result = await AuthService.login({ email, password })
+      
+      if (result.success && result.user && result.token) {
+        console.log('✅ Login successful')
+        
+        // Store in localStorage
+        localStorage.setItem('user', JSON.stringify(result.user))
+        localStorage.setItem('authToken', result.token)
+        localStorage.setItem('isAuthenticated', 'true')
+        
+        // Update state
+        setUser(result.user)
+        setToken(result.token)
+        setIsAuthenticated(true)
+        
+        return { success: true }
+      } else {
+        console.log('❌ Login failed:', result.error)
+        return { success: false, error: result.error }
+      }
+    } catch (error) {
+      console.error('❌ Login error:', error)
+      return { success: false, error: 'Unerwarteter Fehler beim Login' }
+    }
   }
 
-  const value: AuthContextType = {
+  const logout = async () => {
+    try {
+      console.log('🚪 Logging out...')
+      
+      if (token) {
+        await AuthService.logout(token)
+      }
+      
+      // Clear localStorage
+      localStorage.removeItem('user')
+      localStorage.removeItem('authToken')
+      localStorage.removeItem('isAuthenticated')
+      
+      // Update state
+      setUser(null)
+      setToken(null)
+      setIsAuthenticated(false)
+      
+      // Trigger event
+      window.dispatchEvent(new CustomEvent('userLogout'))
+      
+      console.log('✅ Logout successful')
+    } catch (error) {
+      console.error('❌ Logout error:', error)
+    }
+  }
+
+  const refreshUser = async () => {
+    if (token) {
+      const validation = await AuthService.validateToken(token)
+      if (validation.success && validation.user) {
+        setUser(validation.user)
+        localStorage.setItem('user', JSON.stringify(validation.user))
+      }
+    }
+  }
+
+  const value = {
     user,
+    token,
+    isAuthenticated,
     isLoading,
-    isAuthenticated: !!user,
     login,
-    signOut,
+    logout,
+    refreshUser
   }
 
   return (
