@@ -83,9 +83,24 @@ export default function PaymentSuccessPage() {
         })
       })
 
-      const result = await response.json()
+      // Verbesserte Fehlerbehandlung für JSON-Parsing
+      let result
+      try {
+        const responseText = await response.text()
+        console.log('Response text:', responseText)
+        
+        if (!responseText) {
+          throw new Error('Leere Antwort vom Server')
+        }
+        
+        result = JSON.parse(responseText)
+      } catch (parseError) {
+        console.error('JSON Parse Error:', parseError)
+        setErrors({ general: 'Server-Antwort konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.' })
+        return
+      }
 
-      if (result.success) {
+      if (response.ok && result.success) {
         // DIREKTE ANMELDUNG - Keine NextAuth Komplikationen
         try {
           // 1. User-Daten im localStorage speichern
@@ -109,12 +124,12 @@ export default function PaymentSuccessPage() {
           }))
           
           // 3. Erfolgreiche Registrierung anzeigen
-          alert(`✅ Registrierung erfolgreich!\n\nSie sind jetzt eingeloggt als: ${userData.name}\nE-Mail: ${userData.email}\nStatus: ${userData.isPremium ? 'Premium' : 'Standard'}\n\nSie werden in 2 Sekunden weitergeleitet...`)
+          alert(`✅ Registrierung erfolgreich!\n\nSie sind jetzt eingeloggt als: ${userData.name}\nE-Mail: ${userData.email}\nStatus: ${userData.isPremium ? 'Premium' : 'Standard'}\n\nSie erhalten eine Bestätigungs-E-Mail an ${userData.email}\n\nSie werden in 3 Sekunden weitergeleitet...`)
           
           // 4. Router-basierte Weiterleitung ohne window.location
           setTimeout(() => {
             router.push('/learn?welcome=true')
-          }, 2000)
+          }, 3000)
           
         } catch (error) {
           console.error('Login error:', error)
@@ -174,15 +189,15 @@ export default function PaymentSuccessPage() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
-                className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <User className="w-10 h-10 text-orange-600" />
+                <Mail className="w-10 h-10 text-green-600" />
               </motion.div>
               <h1 className="text-2xl font-bold text-gray-900 mb-2">
-                Account erstellen erforderlich! ⚠️
+                Account erstellen & E-Mail erhalten! ✅
               </h1>
               <p className="text-gray-600">
-                Sie erhalten keine E-Mail - registrieren Sie sich jetzt selbst
+                Sie erhalten eine Bestätigungs-E-Mail mit allen wichtigen Informationen
               </p>
             </div>
 
@@ -267,7 +282,7 @@ export default function PaymentSuccessPage() {
               <button
                 type="submit"
                 disabled={registering}
-                className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-orange-700 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-green-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 {registering ? (
                   <>
@@ -276,7 +291,7 @@ export default function PaymentSuccessPage() {
                   </>
                 ) : (
                   <>
-                    Account erstellen & Einloggen
+                    📧 Account erstellen & E-Mail erhalten
                     <ArrowRight className="w-5 h-5" />
                   </>
                 )}
@@ -284,11 +299,11 @@ export default function PaymentSuccessPage() {
             </form>
 
             {/* Info */}
-            <div className="mt-6 p-4 bg-orange-50 border border-orange-200 rounded-lg">
-              <p className="text-sm text-orange-800">
-                <strong>⚡ Kein E-Mail-Versand!</strong><br />
-                Sie erhalten keine E-Mail von uns. Vervollständigen Sie die Registrierung selbst, 
-                um sofortigen Zugriff auf alle Premium-Inhalte zu erhalten.
+            <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+              <p className="text-sm text-green-800">
+                <strong>📧 E-Mail-Bestätigung!</strong><br />
+                Nach der Registrierung erhalten Sie eine Bestätigungs-E-Mail mit allen wichtigen Informationen 
+                und Ihren Login-Daten für sofortigen Zugriff auf alle Premium-Inhalte.
               </p>
             </div>
           </motion.div>
@@ -323,24 +338,23 @@ export default function PaymentSuccessPage() {
             Willkommen bei FahrGewerbe Premium!
           </p>
 
-          {/* Registration Required - No Email */}
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
-            <User className="w-8 h-8 text-orange-600 mx-auto mb-3" />
+          {/* Registration Required - With Email */}
+          <div className="bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-200 rounded-xl p-6 mb-8">
+            <Mail className="w-8 h-8 text-green-600 mx-auto mb-3" />
             <p className="text-gray-800 font-bold mb-2 text-lg">
-              🚨 Registrierung erforderlich!
+              � Registrierung + E-Mail-Bestätigung!
             </p>
             <p className="text-gray-700 font-medium mb-4">
-              Sie erhalten KEINE E-Mail von uns. 
+              Sie erhalten eine Bestätigungs-E-Mail mit allen wichtigen Informationen. 
             </p>
             <p className="text-gray-600 text-sm mb-6">
-              Vervollständigen Sie jetzt Ihre Registrierung selbst, um Zugang zu Ihrem Premium-Account zu erhalten. 
-              Ohne Registrierung können Sie nicht auf die bezahlten Inhalte zugreifen.
+              Vervollständigen Sie jetzt Ihre Registrierung und erhalten Sie automatisch eine E-Mail mit Ihren Login-Daten und dem Zugang zu Ihrem Premium-Account.
             </p>
             <button
               onClick={() => setShowRegistrationForm(true)}
-              className="bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold py-4 px-8 rounded-lg hover:from-orange-700 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 mx-auto text-lg"
+              className="bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold py-4 px-8 rounded-lg hover:from-green-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-2 mx-auto text-lg"
             >
-              ⚡ Jetzt Account erstellen
+              📧 Account erstellen & E-Mail erhalten
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -350,23 +364,23 @@ export default function PaymentSuccessPage() {
             <h3 className="font-bold text-lg mb-4 text-center">⚠️ Wichtige Schritte:</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   1
                 </div>
                 <p className="text-gray-700">
-                  <strong>Account erstellen:</strong> Sie bekommen KEINE E-Mail - registrieren Sie sich selbst!
+                  <strong>Account erstellen:</strong> Geben Sie Ihre Daten ein und erstellen Sie Ihr Passwort
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   2
                 </div>
                 <p className="text-gray-700">
-                  <strong>Name & Passwort:</strong> Wählen Sie Ihren Namen und ein sicheres Passwort
+                  <strong>E-Mail erhalten:</strong> Sie bekommen eine Bestätigungs-E-Mail an Ihre Adresse
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   3
                 </div>
                 <p className="text-gray-700">
@@ -393,9 +407,9 @@ export default function PaymentSuccessPage() {
           </div>
 
           {/* Important Warning */}
-          <div className="mt-6 p-4 bg-red-50 border-2 border-red-200 rounded-lg">
-            <p className="text-sm text-red-800 font-medium text-center">
-              ⚠️ <strong>WICHTIG:</strong> Ohne Registrierung können Sie nicht auf Ihre bezahlten Inhalte zugreifen!
+          <div className="mt-6 p-4 bg-green-50 border-2 border-green-200 rounded-lg">
+            <p className="text-sm text-green-800 font-medium text-center">
+              📧 <strong>E-MAIL BESTÄTIGUNG:</strong> Sie erhalten eine Bestätigungs-E-Mail mit allen wichtigen Informationen!
             </p>
           </div>
 
