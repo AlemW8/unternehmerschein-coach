@@ -73,30 +73,46 @@ export default function PaymentSuccessPage() {
 
     try {
       // Register user with premium status
+      console.log('🚀 Sending registration request...')
+      
+      const requestData = {
+        ...formData,
+        isPremium: true,
+        sessionId
+      }
+      console.log('📋 Request data:', requestData)
+      
       const response = await fetch('/api/auth/register', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          isPremium: true,
-          sessionId
-        })
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(requestData)
       })
+
+      console.log('📡 Response status:', response.status)
+      console.log('📡 Response headers:', Object.fromEntries(response.headers.entries()))
 
       // Verbesserte Fehlerbehandlung für JSON-Parsing
       let result
       try {
         const responseText = await response.text()
-        console.log('Response text:', responseText)
+        console.log('📝 Response text:', responseText)
         
         if (!responseText) {
           throw new Error('Leere Antwort vom Server')
         }
         
+        if (!responseText.startsWith('{') && !responseText.startsWith('[')) {
+          throw new Error(`Ungültige JSON-Antwort: ${responseText.substring(0, 100)}`)
+        }
+        
         result = JSON.parse(responseText)
+        console.log('✅ Parsed result:', result)
       } catch (parseError) {
-        console.error('JSON Parse Error:', parseError)
-        setErrors({ general: 'Server-Antwort konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.' })
+        console.error('❌ JSON Parse Error:', parseError)
+        setErrors({ general: `Server-Antwort konnte nicht verarbeitet werden: ${parseError.message}` })
         return
       }
 
@@ -152,11 +168,12 @@ export default function PaymentSuccessPage() {
           router.push('/learn?welcome=true')
         }
       } else {
-        setErrors({ general: result.error || 'Ein Fehler ist aufgetreten' })
+        console.error('❌ Registration failed:', result)
+        setErrors({ general: result.error || `Server-Fehler (${response.status})` })
       }
     } catch (error) {
-      console.error('Registration error:', error)
-      setErrors({ general: 'Ein Fehler ist aufgetreten' })
+      console.error('❌ Registration error:', error)
+      setErrors({ general: `Netzwerk-Fehler: ${error.message}` })
     } finally {
       setRegistering(false)
     }
