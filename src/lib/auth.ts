@@ -2,11 +2,8 @@ import { NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import bcrypt from 'bcryptjs'
 
-// In-Memory User Storage (for demo purposes)
-const users = new Map()
-
-// Export users map for other modules
-export { users }
+// Import shared user storage
+import { users } from './user-storage'
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -21,7 +18,9 @@ export const authOptions: NextAuthOptions = {
           throw new Error('Email und Passwort sind erforderlich')
         }
 
-        const user = users.get(credentials.email)
+        const user = Array.from(users.values()).find(
+          (u: any) => u.email === credentials.email
+        )
 
         if (!user || !user.password) {
           throw new Error('Ungültige Anmeldedaten')

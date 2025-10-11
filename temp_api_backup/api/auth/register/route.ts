@@ -6,22 +6,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import { sendWelcomeEmail } from '@/lib/email'
 
-// In-Memory Storage (temporär - später Prisma/Supabase)
-const users = new Map<string, any>()
-
-// Admin Account (bereits vorhanden)
-const adminEmail = 'aleemwaqar@outlook.com'
-const adminPasswordHash = bcrypt.hashSync('mera4711', 10)
-users.set(adminEmail, {
-  id: 'admin-1',
-  email: adminEmail,
-  password: adminPasswordHash,
-  name: 'Admin',
-  role: 'ADMIN',
-  isActive: true,
-  createdAt: new Date().toISOString(),
-})
+// Import shared user storage
+import { users } from '@/lib/user-storage'
 
 export async function POST(req: NextRequest) {
   try {
@@ -87,6 +75,18 @@ export async function POST(req: NextRequest) {
     // User speichern
     users.set(email.toLowerCase(), newUser)
 
+    // Welcome E-Mail senden (nur für Premium-User)
+    if (isPremium) {
+      try {
+        const loginUrl = `${process.env.NEXTAUTH_URL || 'https://unternehmerschein-coach-gpla.vercel.app'}/auth/signin`
+        await sendWelcomeEmail(email, name, loginUrl)
+        console.log('✅ Welcome email sent to:', email)
+      } catch (emailError) {
+        console.error('❌ Email sending failed:', emailError)
+        // Don't fail registration if email fails
+      }
+    }
+
     // JWT Token erstellen
     const token = jwt.sign(
       {
@@ -124,6 +124,3 @@ export async function POST(req: NextRequest) {
     )
   }
 }
-
-// Export users Map für andere Module (Webhook, Login)
-export { users }

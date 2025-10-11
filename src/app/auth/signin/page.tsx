@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { staticAPI } from '@/lib/static-auth';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -14,20 +15,14 @@ export default function SignIn() {
     setLoading(true);
 
     try {
-      // API Login - PRODUCTION
-      const response = await fetch('/api/auth/signin', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
-      });
+      // Static API Login - FTP Version
+      const result = await staticAPI.login(email, password);
 
-      const data = await response.json();
-
-      if (response.ok && data.success) {
+      if (result.success) {
         // Store user data
         if (typeof window !== 'undefined') {
-          localStorage.setItem('auth_user', JSON.stringify(data.user));
-          document.cookie = `auth_token=${data.token}; path=/; max-age=2592000`; // 30 days
+          localStorage.setItem('auth_user', JSON.stringify(result.user));
+          document.cookie = `auth_token=${result.token}; path=/; max-age=2592000`; // 30 days
 
           // Check if there's a callback URL
           const urlParams = new URLSearchParams(window.location.search);
@@ -37,7 +32,7 @@ export default function SignIn() {
           window.location.href = callbackUrl;
         }
       } else {
-        alert(data.message || 'Ungültige Anmeldedaten!');
+        alert(result.error || 'Ungültige Anmeldedaten!');
       }
     } catch (error) {
       alert('Ein Fehler ist aufgetreten!');

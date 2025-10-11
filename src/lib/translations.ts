@@ -1,4 +1,6 @@
 // Übersetzungs-Service für Fragen und Antworten
+import { useState, useEffect } from 'react'
+
 export interface TranslatedQuestion {
   id: number
   kapitel: string
@@ -290,4 +292,66 @@ export const uiTranslations: { [lang: string]: TranslationTexts } = {
 // Hook für UI-Übersetzungen
 export function useTranslations(language: string = 'de'): TranslationTexts {
   return uiTranslations[language] || uiTranslations.de
+}
+
+// Hook für Fragen-Übersetzungen
+export function useTranslation() {
+  const [currentLanguage, setCurrentLanguage] = useState('de')
+  
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('app_language') || 'de'
+    setCurrentLanguage(savedLanguage)
+    
+    const handleLanguageChange = (event: any) => {
+      setCurrentLanguage(event.detail.language)
+    }
+    
+    window.addEventListener('languageChange', handleLanguageChange)
+    return () => window.removeEventListener('languageChange', handleLanguageChange)
+  }, [])
+  
+  const translateQuestion = (text: string) => {
+    // Einfache Wort-für-Wort Übersetzung basierend auf häufigen Begriffen
+    if (currentLanguage === 'de') return text
+    
+    const commonTerms: { [key: string]: { [lang: string]: string } } = {
+      'Güterkraftverkehr': {
+        en: 'Freight Transport',
+        tr: 'Yük Taşımacılığı',
+        ar: 'نقل البضائع'
+      },
+      'Personenbeförderung': {
+        en: 'Passenger Transport',
+        tr: 'Yolcu Taşımacılığı',
+        ar: 'نقل الركاب'
+      },
+      'Führerschein': {
+        en: 'Driving License',
+        tr: 'Ehliyet',
+        ar: 'رخصة القيادة'
+      },
+      'Fahrzeug': {
+        en: 'Vehicle',
+        tr: 'Araç',
+        ar: 'مركبة'
+      },
+      'Unternehmen': {
+        en: 'Company',
+        tr: 'Şirket',
+        ar: 'شركة'
+      }
+    }
+    
+    let translatedText = text
+    Object.entries(commonTerms).forEach(([german, translations]) => {
+      const translation = translations[currentLanguage]
+      if (translation) {
+        translatedText = translatedText.replace(new RegExp(german, 'gi'), translation)
+      }
+    })
+    
+    return translatedText
+  }
+  
+  return { currentLanguage, translateQuestion }
 }

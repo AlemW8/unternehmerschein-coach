@@ -15,6 +15,7 @@ import {
   CheckCircle,
   Loader2
 } from 'lucide-react'
+import { staticAPI } from '@/lib/static-auth'
 
 export default function SignUpPage() {
   const [formData, setFormData] = useState({
@@ -49,22 +50,15 @@ export default function SignUpPage() {
     }
 
     try {
-      const response = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          password: formData.password,
-        }),
+      const result = await staticAPI.register({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+        isPremium: false
       })
 
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Registrierung fehlgeschlagen')
+      if (!result.success) {
+        throw new Error(result.error || 'Registrierung fehlgeschlagen')
       }
 
       setSuccess(true)

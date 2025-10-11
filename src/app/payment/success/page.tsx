@@ -5,7 +5,6 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { CheckCircle, Mail, Loader2, ArrowRight, Eye, EyeOff, User } from 'lucide-react'
 import Link from 'next/link'
-import { signIn } from 'next-auth/react'
 
 export default function PaymentSuccessPage() {
   const searchParams = useSearchParams()
@@ -87,17 +86,55 @@ export default function PaymentSuccessPage() {
       const result = await response.json()
 
       if (result.success) {
-        // Auto-login after registration
-        const loginResult = await signIn('credentials', {
-          email: formData.email,
-          password: formData.password,
-          redirect: false
-        })
-
-        if (loginResult?.ok) {
+        // DIREKTE ANMELDUNG - Keine NextAuth Komplikationen
+        try {
+          // 1. User-Daten im localStorage speichern
+          const userData = {
+            id: result.user.id,
+            email: result.user.email,
+            name: result.user.name,
+            role: result.user.role || 'USER',
+            plan: result.user.isPremium ? 'premium' : 'free',
+            isPremium: result.user.isPremium,
+            isActive: true
+          }
+          
+          localStorage.setItem('user', JSON.stringify(userData))
+          localStorage.setItem('authToken', result.token)
+          localStorage.setItem('isAuthenticated', 'true')
+          
+          // 2. Auth Provider Event triggern
+          window.dispatchEvent(new CustomEvent('userLogin', { 
+            detail: { user: userData, token: result.token } 
+          }))
+          
+          // 3. Erfolgreiche Registrierung anzeigen
+          alert(`✅ Registrierung erfolgreich!\n\nSie sind jetzt eingeloggt als: ${userData.name}\nE-Mail: ${userData.email}\nStatus: ${userData.isPremium ? 'Premium' : 'Standard'}\n\nSie werden in 2 Sekunden weitergeleitet...`)
+          
+          // 4. Router-basierte Weiterleitung ohne window.location
+          setTimeout(() => {
+            router.push('/learn?welcome=true')
+          }, 2000)
+          
+        } catch (error) {
+          console.error('Login error:', error)
+          // Fallback: User daten trotzdem speichern
+          const userData = {
+            id: result.user.id,
+            email: result.user.email,
+            name: result.user.name,
+            role: result.user.role || 'USER',
+            plan: result.user.isPremium ? 'premium' : 'free',
+            isPremium: result.user.isPremium,
+            isActive: true
+          }
+          
+          localStorage.setItem('user', JSON.stringify(userData))
+          localStorage.setItem('authToken', result.token)
+          localStorage.setItem('isAuthenticated', 'true')
+          
+          alert('✅ Registrierung erfolgreich! Sie werden weitergeleitet...')
           router.push('/learn?welcome=true')
-        } else {
-          router.push('/auth/signin?message=registration-complete')
         }
       } else {
         setErrors({ general: result.error || 'Ein Fehler ist aufgetreten' })
@@ -137,15 +174,15 @@ export default function PaymentSuccessPage() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
-                className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <CheckCircle className="w-10 h-10 text-green-600" />
+                <User className="w-10 h-10 text-orange-600" />
               </motion.div>
               <h1 className="text-2xl font-bold text-gray-900 mb-2">
-                Zahlung erfolgreich! 🎉
+                Account erstellen erforderlich! ⚠️
               </h1>
               <p className="text-gray-600">
-                Vervollständigen Sie jetzt Ihre Registrierung
+                Sie erhalten keine E-Mail - registrieren Sie sich jetzt selbst
               </p>
             </div>
 
@@ -230,16 +267,16 @@ export default function PaymentSuccessPage() {
               <button
                 type="submit"
                 disabled={registering}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-orange-700 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 {registering ? (
                   <>
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Registrierung wird abgeschlossen...
+                    Account wird erstellt...
                   </>
                 ) : (
                   <>
-                    Registrierung abschließen
+                    Account erstellen & Einloggen
                     <ArrowRight className="w-5 h-5" />
                   </>
                 )}
@@ -247,10 +284,11 @@ export default function PaymentSuccessPage() {
             </form>
 
             {/* Info */}
-            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-              <p className="text-sm text-blue-800">
-                <strong>✅ Premium-Zugang aktiviert!</strong><br />
-                Nach der Registrierung haben Sie sofort Zugriff auf alle Premium-Inhalte.
+            <div className="mt-6 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+              <p className="text-sm text-orange-800">
+                <strong>⚡ Kein E-Mail-Versand!</strong><br />
+                Sie erhalten keine E-Mail von uns. Vervollständigen Sie die Registrierung selbst, 
+                um sofortigen Zugriff auf alle Premium-Inhalte zu erhalten.
               </p>
             </div>
           </motion.div>
@@ -285,51 +323,54 @@ export default function PaymentSuccessPage() {
             Willkommen bei FahrGewerbe Premium!
           </p>
 
-          {/* Registration Call to Action */}
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
-            <User className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+          {/* Registration Required - No Email */}
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
+            <User className="w-8 h-8 text-orange-600 mx-auto mb-3" />
+            <p className="text-gray-800 font-bold mb-2 text-lg">
+              🚨 Registrierung erforderlich!
+            </p>
             <p className="text-gray-700 font-medium mb-4">
-              Vervollständigen Sie jetzt Ihre Registrierung
+              Sie erhalten KEINE E-Mail von uns. 
             </p>
             <p className="text-gray-600 text-sm mb-6">
-              Erstellen Sie Ihr Konto, um sofort mit dem Lernen zu beginnen. 
-              Sie erhalten automatisch Premium-Zugang zu allen Inhalten.
+              Vervollständigen Sie jetzt Ihre Registrierung selbst, um Zugang zu Ihrem Premium-Account zu erhalten. 
+              Ohne Registrierung können Sie nicht auf die bezahlten Inhalte zugreifen.
             </p>
             <button
               onClick={() => setShowRegistrationForm(true)}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 mx-auto"
+              className="bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold py-4 px-8 rounded-lg hover:from-orange-700 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 mx-auto text-lg"
             >
-              Jetzt registrieren
+              ⚡ Jetzt Account erstellen
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
 
           {/* What's Next */}
           <div className="text-left bg-gray-50 rounded-xl p-6 mb-8">
-            <h3 className="font-bold text-lg mb-4 text-center">Was passiert jetzt?</h3>
+            <h3 className="font-bold text-lg mb-4 text-center">⚠️ Wichtige Schritte:</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   1
                 </div>
                 <p className="text-gray-700">
-                  <strong>Registrierung:</strong> Vervollständigen Sie Ihre Anmeldung mit Namen und Passwort
+                  <strong>Account erstellen:</strong> Sie bekommen KEINE E-Mail - registrieren Sie sich selbst!
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   2
                 </div>
                 <p className="text-gray-700">
-                  <strong>Automatischer Login:</strong> Sie werden automatisch angemeldet
+                  <strong>Name & Passwort:</strong> Wählen Sie Ihren Namen und ein sicheres Passwort
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   3
                 </div>
                 <p className="text-gray-700">
-                  <strong>Loslegen:</strong> Starten Sie sofort mit dem Premium-Lerncontent!
+                  <strong>Sofort loslegen:</strong> Nach der Registrierung haben Sie Premium-Zugang!
                 </p>
               </div>
             </div>
@@ -341,7 +382,7 @@ export default function PaymentSuccessPage() {
               href="/auth/signin"
               className="flex-1 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold hover:bg-gray-200 transition-all"
             >
-              Ich habe bereits ein Konto
+              Ich habe bereits einen Account
             </Link>
             <Link
               href="/"
@@ -349,6 +390,13 @@ export default function PaymentSuccessPage() {
             >
               Zur Startseite
             </Link>
+          </div>
+
+          {/* Important Warning */}
+          <div className="mt-6 p-4 bg-red-50 border-2 border-red-200 rounded-lg">
+            <p className="text-sm text-red-800 font-medium text-center">
+              ⚠️ <strong>WICHTIG:</strong> Ohne Registrierung können Sie nicht auf Ihre bezahlten Inhalte zugreifen!
+            </p>
           </div>
 
           {/* Support */}

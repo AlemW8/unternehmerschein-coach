@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowLeft, BookOpen, Brain, Target, RotateCcw, Search } from 'lucide-react'
+import { TranslationButton } from '@/components/ui/translation-button'
 
 // Dynamische Flashcard-Komponente für alle Kategorien
 export default function UniversalFlashcards({ category, title, colorScheme = 'blue' }: {
@@ -214,18 +215,26 @@ export default function UniversalFlashcards({ category, title, colorScheme = 'bl
                     animate={{ opacity: 1, y: 0 }}
                     className="text-center"
                   >
-                    <h2 className="text-xl font-semibold mb-8 text-gray-900 leading-relaxed">
-                      {filteredQuestions[currentCard].question}
-                    </h2>
+                    {/* Question with Translation */}
+                    <div className="mb-8">
+                      <TranslationButton
+                        originalText={filteredQuestions[currentCard].question}
+                        translationType="question"
+                        className="text-left"
+                      />
+                    </div>
 
                     {showAnswer && (
                       <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className={`bg-${colors.light} p-6 rounded-xl border border-${colors.border} mb-6`}
+                        className="mb-6"
                       >
-                        <h3 className={`font-semibold text-${colors.textDark} mb-2`}>Antwort:</h3>
-                        <p className={`text-${colors.text} leading-relaxed`}>{filteredQuestions[currentCard].answer}</p>
+                        <TranslationButton
+                          originalText={filteredQuestions[currentCard].answer}
+                          translationType="answer"
+                          className="text-left"
+                        />
                       </motion.div>
                     )}
 

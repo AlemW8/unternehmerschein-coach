@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // SERVER-MODUS: Vollständige Next.js App mit Stripe & Login
-  // output: 'export', // DEAKTIVIERT für Server-Features
+  // STATIC EXPORT für All-Inkl FTP Upload
+  output: 'export',
+  distDir: 'out',
   trailingSlash: true,
   experimental: {
     serverComponentsExternalPackages: ['bcryptjs']
@@ -13,6 +14,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    unoptimized: true, // Erforderlich für statischen Export
     remotePatterns: [
       {
         protocol: 'https',

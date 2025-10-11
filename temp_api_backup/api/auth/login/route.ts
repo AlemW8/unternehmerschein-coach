@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
 import { sign } from 'jsonwebtoken'
 
-// Import shared user storage from register route
-import { users } from '../register/route'
+// Import shared user storage
+import { users } from '@/lib/user-storage'
 
 const JWT_SECRET = process.env.JWT_SECRET || 'change-this-in-production-to-random-secret'
 
