@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/api/auth/register",
+      "destination": "/api/auth/register"
+    },
+    {
+      "source": "/api/stripe/verify-session",
+      "destination": "/api/stripe/verify-session"
+    }
+  ]
+}
