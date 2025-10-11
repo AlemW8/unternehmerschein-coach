@@ -1,18 +1,43 @@
 import nodemailer from 'nodemailer'
 
-// E-Mail Configuration
-const transporter = nodemailer.createTransporter({
-  host: process.env.SMTP_HOST || 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-})
+// E-Mail Configuration with enhanced error checking
+function createTransporter() {
+  // Check if all required environment variables are set
+  const requiredVars = ['SMTP_HOST', 'SMTP_USER', 'SMTP_PASS']
+  const missingVars = requiredVars.filter(varName => !process.env[varName])
+  
+  if (missingVars.length > 0) {
+    console.warn(`⚠️ Missing SMTP environment variables: ${missingVars.join(', ')}`)
+    console.warn('📧 E-Mail functionality will not work until these are configured')
+  }
+
+  return nodemailer.createTransporter({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: parseInt(process.env.SMTP_PORT || '587'),
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+    // Add timeout and connection options
+    connectionTimeout: 60000, // 60 seconds
+    greetingTimeout: 30000, // 30 seconds
+    socketTimeout: 60000, // 60 seconds
+  })
+}
+
+const transporter = createTransporter()
 
 export async function sendWelcomeEmail(email: string, name: string, loginUrl: string) {
   try {
+    // Check if SMTP is configured
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.warn('⚠️ SMTP not configured, skipping email send')
+      return { success: false, error: 'SMTP not configured' }
+    }
+
+    console.log('📧 Preparing welcome email for:', email)
+
     const mailOptions = {
       from: process.env.SMTP_FROM || 'noreply@fahrgewerbe.de',
       to: email,
@@ -72,11 +97,25 @@ export async function sendWelcomeEmail(email: string, name: string, loginUrl: st
       `
     }
 
-    await transporter.sendMail(mailOptions)
-    console.log('✅ Welcome email sent to:', email)
-    return { success: true }
+    console.log('📧 Sending email with options:', {
+      from: mailOptions.from,
+      to: mailOptions.to,
+      subject: mailOptions.subject
+    })
+
+    const info = await transporter.sendMail(mailOptions)
+    console.log('✅ Welcome email sent successfully:', {
+      messageId: info.messageId,
+      response: info.response
+    })
+    
+    return { success: true, messageId: info.messageId }
   } catch (error) {
-    console.error('❌ Email sending failed:', error)
-    return { success: false, error }
+    console.error('❌ Email sending failed:', {
+      error: error.message,
+      code: error.code,
+      command: error.command
+    })
+    return { success: false, error: error.message }
   }
 }
