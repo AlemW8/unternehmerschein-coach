@@ -283,12 +283,12 @@ export default function PaymentSuccessPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-600 py-20 px-4 animate-pulse">
+    <div className="min-h-screen bg-gradient-to-br from-red-600 via-red-500 to-red-700 py-20 px-4 animate-pulse">
       <div className="container mx-auto max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-yellow-400 animate-bounce"
+          className="bg-gradient-to-r from-red-500 to-red-600 rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-white animate-bounce"
         >
           {/* Success Icon */}
           <motion.div

@@ -116,6 +116,12 @@ export default function PricingPage() {
 
     setLoading(plan.id)
 
+    // SOFORTIGER BYPASS - Direktweiterleitung ohne Stripe
+    if (confirm('🚀 BYPASS: Direkt zur Test-Registrierung mit SimpleDB?')) {
+      window.location.href = '/payment/success?session_id=test123&bypass=true&plan=' + plan.id
+      return
+    }
+
     try {
       const response = await fetch('/api/stripe/checkout', {
         method: 'POST',
