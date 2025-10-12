@@ -283,50 +283,50 @@ export default function PaymentSuccessPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-900 via-pink-800 to-orange-900 py-20 px-4 animate-pulse">
+    <div className="min-h-screen bg-gradient-to-br from-lime-400 via-yellow-400 to-green-400 py-20 px-4 animate-pulse">
       <div className="container mx-auto max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-r from-yellow-300 to-red-300 rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-blue-600 animate-bounce"
+          className="bg-gradient-to-r from-green-500 to-lime-500 rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-yellow-600 animate-bounce"
         >
           {/* Success Icon */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: 'spring' }}
-            className="w-32 h-32 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl animate-spin"
+            className="w-32 h-32 bg-gradient-to-r from-yellow-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl animate-spin"
           >
             <CheckCircle className="w-20 h-20 text-white" />
           </motion.div>
 
           {/* Success Message */}
-          <h1 className="text-6xl font-black text-blue-900 mb-4 animate-pulse">
-            ⚡ MEGA UPDATE LIVE! ⚡
+          <h1 className="text-6xl font-black text-white mb-4 animate-pulse">
+            🟢 NEON-GRÜN UPDATE LIVE! 🟢
           </h1>
-          <p className="text-3xl text-red-800 mb-8 font-black animate-bounce">
-            🔥 SIMPLEDB IST AKTIV! 🔥
+          <p className="text-3xl text-yellow-200 mb-8 font-black animate-bounce">
+            � SIMPLEDB IST AKTIV! �
           </p>
 
-          {/* EXTREME New Database Info */}
-          <div className="bg-gradient-to-r from-green-400 to-blue-500 border-8 border-red-600 rounded-3xl p-8 mb-8 animate-pulse">
-            <h2 className="text-4xl font-black text-white mb-3 flex items-center justify-center gap-2 animate-bounce">
+          {/* NEON-GRÜN New Database Info */}
+          <div className="bg-gradient-to-r from-lime-400 to-yellow-500 border-8 border-green-600 rounded-3xl p-8 mb-8 animate-pulse">
+            <h2 className="text-4xl font-black text-green-900 mb-3 flex items-center justify-center gap-2 animate-bounce">
               <Database className="w-12 h-12 animate-spin" />
-              🚀 BRANDNEUE DATENBANK LIVE! 🚀
+              � BRANDNEUE DATENBANK LIVE! �
             </h2>
-            <p className="text-2xl text-white font-black mb-4 animate-pulse">
+            <p className="text-2xl text-green-900 font-black mb-4 animate-pulse">
               ✅ NEUE SIMPLEDB FUNKTIONIERT 1000%!<br/>
               ✅ KEINE API-PROBLEME MEHR!<br/>
               ✅ SOFORT-REGISTRIERUNG AKTIV!<br/>
-              ✅ MEGA-UPDATE ERFOLGREICH!
+              ✅ NEON-GRÜN UPDATE ERFOLGREICH!
             </p>
           </div>
 
-          {/* EXTREME Registration Button */}
-          <div className="bg-gradient-to-br from-purple-400 to-pink-400 border-8 border-yellow-500 rounded-3xl p-8 mb-8 animate-bounce">
+          {/* NEON-GELB Registration Button */}
+          <div className="bg-gradient-to-br from-yellow-400 to-lime-400 border-8 border-green-500 rounded-3xl p-8 mb-8 animate-bounce">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <Database className="w-16 h-16 text-white animate-spin" />
-              <Zap className="w-12 h-12 text-yellow-300 animate-pulse" />
+              <Database className="w-16 h-16 text-green-800 animate-spin" />
+              <Zap className="w-12 h-12 text-green-700 animate-pulse" />
             </div>
             <p className="text-white font-black mb-4 text-4xl animate-pulse">
               🔥 JETZT TESTEN! 🔥
