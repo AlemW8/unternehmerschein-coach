@@ -283,62 +283,62 @@ export default function PaymentSuccessPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black py-20 px-4 animate-pulse">
+    <div className="min-h-screen bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-600 py-20 px-4 animate-pulse">
       <div className="container mx-auto max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-black rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-white animate-bounce"
+          className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl shadow-2xl p-8 md:p-12 text-center border-8 border-yellow-400 animate-bounce"
         >
           {/* Success Icon */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: 'spring' }}
-            className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl animate-spin"
+            className="w-32 h-32 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl animate-spin"
           >
-            <CheckCircle className="w-20 h-20 text-black" />
+            <CheckCircle className="w-20 h-20 text-blue-900" />
           </motion.div>
 
           {/* Success Message */}
           <h1 className="text-6xl font-black text-white mb-4 animate-pulse">
-            ⚫ SCHWARZ UPDATE LIVE! ⚫
+            🔵 NEON-BLAU UPDATE LIVE! 🔵
           </h1>
-          <p className="text-3xl text-white mb-8 font-black animate-bounce">
-            🖤 SIMPLEDB IST AKTIV! 🖤
+          <p className="text-3xl text-yellow-200 mb-8 font-black animate-bounce">
+            � SIMPLEDB IST AKTIV! �
           </p>
 
-          {/* SCHWARZ New Database Info */}
-          <div className="bg-gray-900 border-8 border-white rounded-3xl p-8 mb-8 animate-pulse">
+          {/* NEON-BLAU New Database Info */}
+          <div className="bg-gradient-to-r from-blue-600 to-cyan-500 border-8 border-yellow-400 rounded-3xl p-8 mb-8 animate-pulse">
             <h2 className="text-4xl font-black text-white mb-3 flex items-center justify-center gap-2 animate-bounce">
-              <Database className="w-12 h-12 animate-spin text-white" />
-              ⚫ BRANDNEUE DATENBANK LIVE! ⚫
+              <Database className="w-12 h-12 animate-spin text-yellow-300" />
+              🔵 BRANDNEUE DATENBANK LIVE! 🔵
             </h2>
             <p className="text-2xl text-white font-black mb-4 animate-pulse">
               ✅ NEUE SIMPLEDB FUNKTIONIERT 1000%!<br/>
               ✅ KEINE API-PROBLEME MEHR!<br/>
               ✅ SOFORT-REGISTRIERUNG AKTIV!<br/>
-              ✅ SCHWARZ UPDATE ERFOLGREICH!
+              ✅ NEON-BLAU UPDATE ERFOLGREICH!
             </p>
           </div>
 
-          {/* SCHWARZ Registration Button */}
-          <div className="bg-gray-800 border-8 border-white rounded-3xl p-8 mb-8 animate-bounce">
+          {/* NEON-BLAU Registration Button */}
+          <div className="bg-gradient-to-br from-cyan-400 to-blue-500 border-8 border-yellow-400 rounded-3xl p-8 mb-8 animate-bounce">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <Database className="w-16 h-16 text-green-800 animate-spin" />
-              <Zap className="w-12 h-12 text-green-700 animate-pulse" />
+              <Database className="w-16 h-16 text-yellow-300 animate-spin" />
+              <Zap className="w-12 h-12 text-yellow-200 animate-pulse" />
             </div>
             <p className="text-white font-black mb-4 text-4xl animate-pulse">
-              🖤 JETZT TESTEN! 🖤
+              � JETZT TESTEN! �
             </p>
             <p className="text-white font-bold mb-4 text-2xl">
               NEUE DATENBANK = 100% ERFOLG! 
             </p>
             <button
               onClick={() => setShowRegistrationForm(true)}
-              className="bg-white text-black font-black py-8 px-16 rounded-3xl hover:bg-gray-200 transition-all duration-300 flex items-center justify-center gap-4 mx-auto text-2xl shadow-2xl transform hover:scale-110 animate-pulse"
+              className="bg-yellow-400 text-blue-900 font-black py-8 px-16 rounded-3xl hover:bg-yellow-300 transition-all duration-300 flex items-center justify-center gap-4 mx-auto text-2xl shadow-2xl transform hover:scale-110 animate-pulse"
             >
-              ⚫ SIMPLEDB JETZT TESTEN! ⚫
+              🔵 SIMPLEDB JETZT TESTEN! 🔵
               <ArrowRight className="w-8 h-8 animate-bounce" />
             </button>
           </div>
