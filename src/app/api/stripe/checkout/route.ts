@@ -3,6 +3,15 @@ import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
 
+// GET Route für Tests
+export async function GET(request: NextRequest) {
+  return NextResponse.json({ 
+    message: 'Stripe Checkout API ist aktiv',
+    methods: ['POST'],
+    timestamp: new Date().toISOString()
+  })
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { priceId } = await request.json()
